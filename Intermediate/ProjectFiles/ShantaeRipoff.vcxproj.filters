@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<None Include="..\..\ShantaeRipoff.uproject" />
+		<Filter Include="Source">
+			<UniqueIdentifier>{D72DABAA-930A-4CA6-AC84-62D5C845A2ED}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Source\ShantaeRipoff.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<None Include="..\..\Source\ShantaeRipoffEditor.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<Filter Include="Config">
+			<UniqueIdentifier>{08523A50-06A3-4078-B87B-9389956CBF6B}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Config\DefaultEditor.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultEngine.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultGame.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultInput.ini">
+			<Filter>Config</Filter>
+		</None >
+		<Filter Include="Source\ShantaeRipoff">
+			<UniqueIdentifier>{A614E3AB-54E4-4DBC-9FD8-264F310C68F3}</UniqueIdentifier>
+		</Filter>
+		<ClCompile Include="..\..\Source\ShantaeRipoff\MyActor.cpp">
+			<Filter>Source\ShantaeRipoff</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\ShantaeRipoff\MyActor.h">
+			<Filter>Source\ShantaeRipoff</Filter>
+		</ClInclude >
+		<None Include="..\..\Source\ShantaeRipoff\ShantaeRipoff.Build.cs">
+			<Filter>Source\ShantaeRipoff</Filter>
+		</None >
+		<ClCompile Include="..\..\Source\ShantaeRipoff\ShantaeRipoff.cpp">
+			<Filter>Source\ShantaeRipoff</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\ShantaeRipoff\ShantaeRipoff.h">
+			<Filter>Source\ShantaeRipoff</Filter>
+		</ClInclude >
+	</ItemGroup>
+</Project>
