@@ -1,9 +1,9 @@
-﻿Log file open, 01/31/17 08:02:57
+﻿Log file open, 01/31/17 15:54:44
 LogInit:Display: Running engine for game: ShantaeRipoff
 LogPlatformFile: Not using cached read wrapper
-LogInit:Display: RandInit(223696674) SRandInit(223696675).
+LogInit:Display: RandInit(-717627758) SRandInit(-717627758).
 LogTaskGraph: Started task graph with 5 named threads and 8 total threads with 1 sets of task threads.
-LogStats: Stats thread started at 0.083229
+LogStats: Stats thread started at 0.082066
 LogPluginManager: Loaded Plugin Paper2D, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/2D/Paper2D/Paper2D.uplugin
 LogPluginManager: Loaded Plugin LightPropagationVolume, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Blendables/LightPropagationVolume/LightPropagationVolume.uplugin
 LogPluginManager: Loaded Plugin BlankPlugin, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Developer/BlankPlugin/BlankPlugin.uplugin
@@ -144,583 +144,851 @@ LogInit: Base directory: C:/Program Files (x86)/Epic Games/4.14/Engine/Binaries/
 LogInit: Installed Engine Build: 1
 LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
 LogInit: Object subsystem initialized
-[2017.01.31-13.02.57:523][  0]LogInit: Selected Device Profile: [Windows]
-[2017.01.31-13.02.57:523][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2017.01.31-13.02.57:534][  0]LogInit: Computer: TAK-FALCONARROW
-[2017.01.31-13.02.57:534][  0]LogInit: User: Tak
-[2017.01.31-13.02.57:534][  0]LogInit: CPU Page size=65536, Cores=4
-[2017.01.31-13.02.57:534][  0]LogInit: High frequency timer resolution =3.318395 MHz
-[2017.01.31-13.02.57:534][  0]LogMemory: Memory total: Physical=7.9GB (8GB approx)
-[2017.01.31-13.02.57:534][  0]LogMemory: Platform Memory Stats for Windows
-[2017.01.31-13.02.57:534][  0]LogMemory: Process Physical Memory: 263.89 MB used, 263.89 MB peak
-[2017.01.31-13.02.57:534][  0]LogMemory: Process Virtual Memory: 262.68 MB used, 262.68 MB peak
-[2017.01.31-13.02.57:534][  0]LogMemory: Physical Memory: 4759.53 MB used,  3370.39 MB free, 8129.92 MB total
-[2017.01.31-13.02.57:534][  0]LogMemory: Virtual Memory: 675.55 MB used,  3370.39 MB free, 134217728.00 MB total
-[2017.01.31-13.02.57:557][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
-[2017.01.31-13.02.58:125][  0]LogD3D11RHI: D3D11 adapters:
-[2017.01.31-13.02.58:645][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 760' (Feature Level 11_0)
-[2017.01.31-13.02.58:645][  0]LogD3D11RHI:       2017/0/4064 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
-[2017.01.31-13.02.58:647][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
-[2017.01.31-13.02.58:647][  0]LogD3D11RHI:       0/0/4064 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
-[2017.01.31-13.02.58:647][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
-[2017.01.31-13.02.58:650][  0]LogD3D11RHI: Creating new Direct3DDevice
-[2017.01.31-13.02.58:650][  0]LogD3D11RHI:     GPU DeviceId: 0x1187 (for the marketing name, search the web for "GPU Device Id")
-[2017.01.31-13.02.58:650][  0]LogWindows: EnumDisplayDevices:
-[2017.01.31-13.02.58:651][  0]LogWindows:    0. 'NVIDIA GeForce GTX 760' (P:1 D:1)
-[2017.01.31-13.02.58:651][  0]LogWindows:    1. 'NVIDIA GeForce GTX 760' (P:0 D:1)
-[2017.01.31-13.02.58:651][  0]LogWindows:    2. 'NVIDIA GeForce GTX 760' (P:0 D:0)
-[2017.01.31-13.02.58:651][  0]LogWindows:    3. 'NVIDIA GeForce GTX 760' (P:0 D:0)
-[2017.01.31-13.02.58:651][  0]LogWindows: DebugString: FoundDriverCount:4 
-[2017.01.31-13.02.58:651][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 760
-[2017.01.31-13.02.58:651][  0]LogD3D11RHI:   Driver Version: 376.09 (internal:21.21.13.7609, unified:376.09)
-[2017.01.31-13.02.58:651][  0]LogD3D11RHI:      Driver Date: 11-24-2016
-[2017.01.31-13.02.58:651][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
-[2017.01.31-13.02.59:143][  0]LogD3D11RHI:Warning: Timestamp queries are currently disabled on this hardware due to instability. Realtime GPU stats will not be available. You can override this behaviour by setting r.NVIDIATimestampWorkaround to 0
-[2017.01.31-13.02.59:143][  0]LogD3D11RHI: Async texture creation enabled
-[2017.01.31-13.02.59:177][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
-[2017.01.31-13.02.59:178][  0]LogShaderCompilers: Guid format shader working directory is -25 characters bigger than the processId version (../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Intermediate/Shaders/WorkingDirectory/6312/).
-[2017.01.31-13.02.59:178][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Tak/AppData/Local/Temp/UnrealShaderWorkingDir/EAE075E54B98596F56D41C9DFA40E8F2/'.
-[2017.01.31-13.02.59:178][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
-[2017.01.31-13.03.00:133][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
-[2017.01.31-13.03.00:181][  0]LogTemp:Display: Loaded TP MacClientTargetPlatform
-[2017.01.31-13.03.00:229][  0]LogTemp:Display: Loaded TP MacNoEditorTargetPlatform
-[2017.01.31-13.03.00:277][  0]LogTemp:Display: Loaded TP MacServerTargetPlatform
-[2017.01.31-13.03.00:325][  0]LogTemp:Display: Loaded TP MacTargetPlatform
-[2017.01.31-13.03.00:373][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
-[2017.01.31-13.03.00:421][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
-[2017.01.31-13.03.00:469][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
-[2017.01.31-13.03.00:507][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
-[2017.01.31-13.03.00:553][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
-[2017.01.31-13.03.00:599][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
-[2017.01.31-13.03.00:645][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
-[2017.01.31-13.03.00:691][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
-[2017.01.31-13.03.00:737][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
-[2017.01.31-13.03.00:784][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
-[2017.01.31-13.03.00:875][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
-[2017.01.31-13.03.00:875][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
-[2017.01.31-13.03.00:906][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
-[2017.01.31-13.03.00:981][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
-[2017.01.31-13.03.01:012][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
-[2017.01.31-13.03.01:059][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
-[2017.01.31-13.03.01:107][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
-[2017.01.31-13.03.01:152][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
-[2017.01.31-13.03.01:198][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
-[2017.01.31-13.03.01:198][  0]LogTargetPlatformManager:Display: Building Assets For Windows
-[2017.01.31-13.03.01:546][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
-[2017.01.31-13.03.01:593][  0]LogDerivedDataCache: Loaded boot cache 0.05s 50MB C:/Users/Tak/AppData/Local/UnrealEngine/4.14/DerivedDataCache/Boot.ddc.
-[2017.01.31-13.03.01:593][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Tak/AppData/Local/UnrealEngine/4.14/DerivedDataCache/Boot.ddc
-[2017.01.31-13.03.01:593][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2017.01.31-13.03.01:593][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2017.01.31-13.03.01:593][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2017.01.31-13.03.01:593][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2017.01.31-13.03.01:609][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2017.01.31-13.03.01:621][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Tak/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2017.01.31-13.03.01:803][  0]LogInit: Selected Device Profile: [Windows]
-[2017.01.31-13.03.01:806][  0]LogContentStreaming: Texture pool size is 0.00 MB
-[2017.01.31-13.03.01:992][  0]LogMeshUtilities: Using QuadricMeshReduction for automatic static mesh reduction
-[2017.01.31-13.03.02:029][  0]LogSimplygon: Simplygon DLL not present - disabling.
-[2017.01.31-13.03.02:071][  0]LogMeshUtilities: Using SimplygonSwarm for distributed automatic mesh merging
-[2017.01.31-13.03.02:071][  0]LogMeshUtilities: No automatic skeletal mesh reduction module available
-[2017.01.31-13.03.02:071][  0]LogMeshUtilities: No automatic mesh merging module available
-[2017.01.31-13.03.02:510][  0]LogNetVersion: GetLocalNetworkVersion: CL: 3195953, ProjectName: shantaeripoff, ProjectVersion: , EngineNetworkVersion: 2, GameNetworkVersion: 0, NetworkChecksum: 157577820
-[2017.01.31-13.03.02:561][  0]LogAssetRegistry: FAssetRegistry took 0.0215 seconds to start up
-[2017.01.31-13.03.02:601][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 2 prioritized culture(s) in 0.021018 seconds
-[2017.01.31-13.03.02:607][  0]LogUObjectArray: 31946 objects as part of root set at end of initial load.
-[2017.01.31-13.03.02:607][  0]LogUObjectAllocator: 6935848 out of 0 bytes used by permanent object pool.
-[2017.01.31-13.03.02:607][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
-[2017.01.31-13.03.02:661][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
-[2017.01.31-13.03.03:309][  0]LogSlate: Using Freetype 2.6.0
-[2017.01.31-13.03.03:309][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2017.01.31-13.03.03:309][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2017.01.31-13.03.04:032][  0]LogSubstanceCoreModule: Substance [CPU] Engine Loaded, Max Texture Size = 2048
-[2017.01.31-13.03.04:058][  0]LogTcpMessaging: Initializing TcpMessaging bridge
-[2017.01.31-13.03.04:097][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2017.01.31-13.03.04:401][  0]LogMaterial: Uniform references updated for custom material expression Custom.
-[2017.01.31-13.03.04:765][  0]SourceControl: Info Source control is disabled
-[2017.01.31-13.03.04:766][  0]SourceControl: Info Source control is disabled
-[2017.01.31-13.03.04:810][  0]SourceControl: Info Source control is disabled
-[2017.01.31-13.03.04:853][  0]SourceControl: Info Source control is disabled
-[2017.01.31-13.03.06:030][  0]LogEngine: Initializing Engine...
-[2017.01.31-13.03.06:030][  0]LogHMD: Failed to initialize OpenVR with code 110
-[2017.01.31-13.03.06:238][  0]LogAIModule: Creating AISystem for world Untitled
-[2017.01.31-13.03.06:252][  0]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
-[2017.01.31-13.03.06:277][  0]LogInit: FAudioDevice initialized.
-[2017.01.31-13.03.06:301][  0]LogDerivedDataCache: Saved boot cache 0.02s 50MB C:/Users/Tak/AppData/Local/UnrealEngine/4.14/DerivedDataCache/Boot.ddc.
-[2017.01.31-13.03.06:308][  0]LogInit: Texture streaming: Enabled
-[2017.01.31-13.03.06:467][  0]LogInit: Transaction tracking system initialized
-[2017.01.31-13.03.06:765][  0]BlueprintLog: New page: Editor Load
-[2017.01.31-13.03.07:537][  0]LocalizationService: Info Localization service is disabled
-[2017.01.31-13.03.08:096][  0]LogConsoleResponse:Display: 
-[2017.01.31-13.03.08:217][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
-[2017.01.31-13.03.08:217][  0]LogCook:Display: Mobile HDR setting 1
-[2017.01.31-13.03.08:239][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Content/' took 0.02s
-[2017.01.31-13.03.09:050][  0]SourceControl: Info Source control is disabled
-[2017.01.31-13.03.09:050][  0]Cmd: MAP LOAD FILE="../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Content/ShantaesRipoff/Maps/level_00.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2017.01.31-13.03.09:051][  0]LightingResults: New page: Lighting Build
-[2017.01.31-13.03.09:086][  0]MapCheck: New page: Map Check
-[2017.01.31-13.03.09:086][  0]LightingResults: New page: Lighting Build
-[2017.01.31-13.03.09:420][  0]LogAIModule: Creating AISystem for world level_00
-[2017.01.31-13.03.09:431][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2017.01.31-13.03.09:432][  0]Cmd: MAP CHECKDEP NOCLEARLOG
-[2017.01.31-13.03.09:476][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 43.095ms to complete.
-[2017.01.31-13.03.09:476][  0]LogFileHelpers: Loading map 'level_00' took 0.425
-[2017.01.31-13.03.09:681][  0]LogCollectionManager: Loaded 1 collections in 0.002670 seconds
-[2017.01.31-13.03.09:752][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Saved/Collections/' took 0.01s
-[2017.01.31-13.03.09:752][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Content/Developers/Tak/Collections/' took 0.01s
-[2017.01.31-13.03.09:752][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Content/Collections/' took 0.01s
-[2017.01.31-13.03.09:752][  0]LogCollectionManager: Rebuilt the GUID cache for 1 collections in 0.000004 seconds
-[2017.01.31-13.03.09:752][  0]LogCollectionManager: Rebuilt the hierarchy cache for 1 collections in 0.000000 seconds
-[2017.01.31-13.03.09:762][  0]LogContentBrowser: Native class hierarchy populated in 0.0091 seconds. Added 2204 classes and 434 folders.
-[2017.01.31-13.03.09:799][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
-[2017.01.31-13.03.09:799][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
-[2017.01.31-13.03.09:800][  0]LogContentBrowser: Native class hierarchy updated for 'GameplayTags' in 0.0013 seconds. Added 13 classes and 0 folders.
-[2017.01.31-13.03.09:857][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0013 seconds. Added 0 classes and 0 folders.
-[2017.01.31-13.03.09:895][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0013 seconds. Added 0 classes and 0 folders.
-[2017.01.31-13.03.09:932][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0013 seconds. Added 1 classes and 2 folders.
-[2017.01.31-13.03.10:003][  0]LogCrashTracker: Crashtracker disabled due to settings.
-[2017.01.31-13.03.10:007][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
-[2017.01.31-13.03.10:066][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0013 seconds. Added 1 classes and 2 folders.
-[2017.01.31-13.03.10:066][  0]LogLoad: (Engine Initialization) Total time: 13.99 seconds
-[2017.01.31-13.03.10:066][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.11 seconds
-[2017.01.31-13.03.10:066][  0]LogExternalProfiler: Found external profiler: VSPerf
-[2017.01.31-13.03.10:066][  0]LogExternalProfiler: Using external profiler: VSPerf
-[2017.01.31-13.03.10:408][  0]LogOcInput: OculusInput pre-init called
-[2017.01.31-13.03.10:431][  0]LogContentStreaming: Texture pool size now 1000 MB
-[2017.01.31-13.03.10:575][  0]LogRenderer: Reallocating scene render targets to support 984x572 NumSamples 1 (Frame:2).
-[2017.01.31-13.03.11:422][  3]LogAssetRegistry: Asset discovery search completed in 8.8822 seconds
-[2017.01.31-13.03.11:422][  3]LogCollectionManager: Rebuilt the object cache for 1 collections in 0.000014 seconds (found 0 objects)
-[2017.01.31-13.03.11:422][  3]LogCollectionManager: Fixed up redirectors for 1 collections in 0.000061 seconds (updated 0 objects)
-[2017.01.31-13.03.13:487][191]LogTemp: Repeting last play command: New Editor Window (PIE)
-[2017.01.31-13.03.13:503][191]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2017.01.31-13.03.13:503][191]PIE: New page: PIE session: level_00 (Jan 31, 2017, 3:03:13 AM)
-[2017.01.31-13.03.13:503][191]LogPlayLevel: Creating play world package: /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00
-[2017.01.31-13.03.13:510][191]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006794s)
-[2017.01.31-13.03.13:511][191]LogAIModule: Creating AISystem for world level_00
-[2017.01.31-13.03.13:511][191]LogPlayLevel: PIE: World Init took: (0.000657s)
-[2017.01.31-13.03.13:511][191]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ShantaesRipoff/Maps/level_00.level_00 to /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00.level_00 (0.007664s)
-[2017.01.31-13.03.13:533][191]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
-[2017.01.31-13.03.13:541][191]LogInit: FAudioDevice initialized.
-[2017.01.31-13.03.13:604][191]LogLoad: Game class is '2DSideScrollerGameMode_C'
-[2017.01.31-13.03.13:608][191]LogWorld: Bringing World /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00.level_00 up for play (max tick rate 0) at 2017.01.31-08.03.13
-[2017.01.31-13.03.13:609][191]LogWorld: Bringing up level for play took: 0.003453
-[2017.01.31-13.03.13:646][191]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0014 seconds. Added 11 classes and 0 folders.
-[2017.01.31-13.03.13:647][191]PIE:Warning: Warning The widget 'Widget_HUD_C' was already added to the screen.
-[2017.01.31-13.03.13:652][191]PIE: Info Play in editor start time for /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00 1.016
-[2017.01.31-13.03.13:685][191]LogRenderer: Reallocating scene render targets to support 1292x756 NumSamples 1 (Frame:43).
-[2017.01.31-13.03.18:531][645]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (M_Sidewalk_L2)
-[2017.01.31-13.03.19:681][772]LogEditorViewport: Clicking on Actor (LMB): BP_Ugmo_C (BP_Ugmo)
-[2017.01.31-13.03.19:727][772]LogEditorViewport: Clicking on Component (LMB): PaperFlipbookComponent (Sprite0)
-[2017.01.31-13.03.22:713][ 71]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0016 seconds. Added 111 classes and 0 folders.
-[2017.01.31-13.03.43:921][452]LogSavePackage: Save=39.44ms
-[2017.01.31-13.03.43:921][452]LogSavePackage: Moving '../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Saved/BP_Ugmo74B48D9A4D8E780018D5EB9329382FED.tmp' to '../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Content/ShantaesRipoff/Blueprint/BP_Ugmo.uasset'
-[2017.01.31-13.03.43:922][452]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Content/ShantaesRipoff/Blueprint/BP_Ugmo.uasset
-[2017.01.31-13.03.44:346][501]BlueprintLog: New page: Compile BP_Ugmo
-[2017.01.31-13.03.46:905][772]LogSavePackage: Save=64.45ms
-[2017.01.31-13.03.46:905][772]LogSavePackage: Moving '../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Saved/level_0010ED517D422A007E30E167B929A71A82.tmp' to '../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Content/ShantaesRipoff/Maps/level_00.umap'
-[2017.01.31-13.03.46:908][772]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Content/ShantaesRipoff/Maps/level_00.umap
-[2017.01.31-13.03.47:681][857]LogTemp: Repeting last play command: New Editor Window (PIE)
-[2017.01.31-13.03.47:699][857]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2017.01.31-13.03.47:699][857]PIE: New page: PIE session: level_00 (Jan 31, 2017, 3:03:47 AM)
-[2017.01.31-13.03.47:699][857]LogPlayLevel: Creating play world package: /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00
-[2017.01.31-13.03.47:705][857]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006079s)
-[2017.01.31-13.03.47:705][857]LogAIModule: Creating AISystem for world level_00
-[2017.01.31-13.03.47:706][857]LogPlayLevel: PIE: World Init took: (0.000692s)
-[2017.01.31-13.03.47:706][857]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ShantaesRipoff/Maps/level_00.level_00 to /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00.level_00 (0.006979s)
-[2017.01.31-13.03.47:728][857]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
-[2017.01.31-13.03.47:736][857]LogInit: FAudioDevice initialized.
-[2017.01.31-13.03.47:788][857]LogLoad: Game class is '2DSideScrollerGameMode_C'
-[2017.01.31-13.03.47:796][857]LogWorld: Bringing World /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00.level_00 up for play (max tick rate 0) at 2017.01.31-08.03.47
-[2017.01.31-13.03.47:798][857]LogWorld: Bringing up level for play took: 0.007155
-[2017.01.31-13.03.47:801][857]PIE:Warning: Warning The widget 'Widget_HUD_C' was already added to the screen.
-[2017.01.31-13.03.47:809][857]PIE: Info Play in editor start time for /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00 -0.827
-[2017.01.31-13.04.04:372][706]BlueprintLog: New page: Compile BP_Ugmo
-[2017.01.31-13.04.04:402][706]LogUObjectGlobals:Warning: Guid referenced by CapsuleComponent /Game/ShantaesRipoff/Maps/level_00.level_00:PersistentLevel.BP_Ugmo_366.CollisionCylinder is already used by CapsuleComponent /Game/ShantaesRipoff/Maps/level_00.level_00:PersistentLevel.REINST_BP_Ugmo_C_2.CollisionCylinder, which should never happen in the editor but could happen at runtime with duplicate level loading or PIE
-[2017.01.31-13.04.04:402][706]LogUObjectGlobals:Warning: Guid referenced by ArrowComponent /Game/ShantaesRipoff/Maps/level_00.level_00:PersistentLevel.BP_Ugmo_366.Arrow is already used by ArrowComponent /Game/ShantaesRipoff/Maps/level_00.level_00:PersistentLevel.REINST_BP_Ugmo_C_2.Arrow, which should never happen in the editor but could happen at runtime with duplicate level loading or PIE
-[2017.01.31-13.04.04:402][706]LogUObjectGlobals:Warning: Guid referenced by CharacterMovementComponent /Game/ShantaesRipoff/Maps/level_00.level_00:PersistentLevel.BP_Ugmo_366.CharMoveComp is already used by CharacterMovementComponent /Game/ShantaesRipoff/Maps/level_00.level_00:PersistentLevel.REINST_BP_Ugmo_C_2.CharMoveComp, which should never happen in the editor but could happen at runtime with duplicate level loading or PIE
-[2017.01.31-13.04.04:402][706]LogUObjectGlobals:Warning: Guid referenced by PaperFlipbookComponent /Game/ShantaesRipoff/Maps/level_00.level_00:PersistentLevel.BP_Ugmo_366.Sprite0 is already used by PaperFlipbookComponent /Game/ShantaesRipoff/Maps/level_00.level_00:PersistentLevel.REINST_BP_Ugmo_C_2.Sprite0, which should never happen in the editor but could happen at runtime with duplicate level loading or PIE
-[2017.01.31-13.04.06:709][943]LogTemp: Repeting last play command: New Editor Window (PIE)
-[2017.01.31-13.04.06:725][943]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2017.01.31-13.04.06:725][943]PIE: New page: PIE session: level_00 (Jan 31, 2017, 3:04:06 AM)
-[2017.01.31-13.04.06:725][943]LogPlayLevel: Creating play world package: /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00
-[2017.01.31-13.04.06:731][943]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005993s)
-[2017.01.31-13.04.06:732][943]LogAIModule: Creating AISystem for world level_00
-[2017.01.31-13.04.06:732][943]LogPlayLevel: PIE: World Init took: (0.000723s)
-[2017.01.31-13.04.06:732][943]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ShantaesRipoff/Maps/level_00.level_00 to /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00.level_00 (0.006953s)
-[2017.01.31-13.04.06:755][943]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
-[2017.01.31-13.04.06:763][943]LogInit: FAudioDevice initialized.
-[2017.01.31-13.04.06:805][943]LogLoad: Game class is '2DSideScrollerGameMode_C'
-[2017.01.31-13.04.06:808][943]LogWorld: Bringing World /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00.level_00 up for play (max tick rate 0) at 2017.01.31-08.04.06
-[2017.01.31-13.04.06:810][943]LogWorld: Bringing up level for play took: 0.003300
-[2017.01.31-13.04.06:811][943]PIE:Warning: Warning The widget 'Widget_HUD_C' was already added to the screen.
-[2017.01.31-13.04.06:816][943]PIE: Info Play in editor start time for /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00 0.18
-[2017.01.31-13.04.16:608][974]BlueprintLog: New page: Compile BP_Ugmo
-[2017.01.31-13.04.17:835][ 76]LogTemp: Repeting last play command: New Editor Window (PIE)
-[2017.01.31-13.04.17:850][ 76]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2017.01.31-13.04.17:850][ 76]PIE: New page: PIE session: level_00 (Jan 31, 2017, 3:04:17 AM)
-[2017.01.31-13.04.17:850][ 76]LogPlayLevel: Creating play world package: /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00
-[2017.01.31-13.04.17:856][ 76]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005974s)
-[2017.01.31-13.04.17:856][ 76]LogAIModule: Creating AISystem for world level_00
-[2017.01.31-13.04.17:857][ 76]LogPlayLevel: PIE: World Init took: (0.000651s)
-[2017.01.31-13.04.17:857][ 76]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ShantaesRipoff/Maps/level_00.level_00 to /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00.level_00 (0.006876s)
-[2017.01.31-13.04.17:879][ 76]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
-[2017.01.31-13.04.17:887][ 76]LogInit: FAudioDevice initialized.
-[2017.01.31-13.04.17:937][ 76]LogLoad: Game class is '2DSideScrollerGameMode_C'
-[2017.01.31-13.04.17:945][ 76]LogWorld: Bringing World /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00.level_00 up for play (max tick rate 0) at 2017.01.31-08.04.17
-[2017.01.31-13.04.17:946][ 76]LogWorld: Bringing up level for play took: 0.006570
-[2017.01.31-13.04.17:949][ 76]PIE:Warning: Warning The widget 'Widget_HUD_C' was already added to the screen.
-[2017.01.31-13.04.17:956][ 76]PIE: Info Play in editor start time for /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00 -0.68
-[2017.01.31-13.04.34:081][904]BlueprintLog: New page: Compile BP_Ugmo
-[2017.01.31-13.04.35:043][  2]LogTemp: Repeting last play command: New Editor Window (PIE)
-[2017.01.31-13.04.35:058][  2]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2017.01.31-13.04.35:058][  2]PIE: New page: PIE session: level_00 (Jan 31, 2017, 3:04:35 AM)
-[2017.01.31-13.04.35:058][  2]LogPlayLevel: Creating play world package: /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00
-[2017.01.31-13.04.35:064][  2]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006092s)
-[2017.01.31-13.04.35:065][  2]LogAIModule: Creating AISystem for world level_00
-[2017.01.31-13.04.35:065][  2]LogPlayLevel: PIE: World Init took: (0.000908s)
-[2017.01.31-13.04.35:065][  2]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ShantaesRipoff/Maps/level_00.level_00 to /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00.level_00 (0.007232s)
-[2017.01.31-13.04.35:088][  2]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
-[2017.01.31-13.04.35:096][  2]LogInit: FAudioDevice initialized.
-[2017.01.31-13.04.35:142][  2]LogLoad: Game class is '2DSideScrollerGameMode_C'
-[2017.01.31-13.04.35:146][  2]LogWorld: Bringing World /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00.level_00 up for play (max tick rate 0) at 2017.01.31-08.04.35
-[2017.01.31-13.04.35:147][  2]LogWorld: Bringing up level for play took: 0.003563
-[2017.01.31-13.04.35:148][  2]PIE:Warning: Warning The widget 'Widget_HUD_C' was already added to the screen.
-[2017.01.31-13.04.35:153][  2]PIE: Info Play in editor start time for /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00 0.517
-[2017.01.31-13.04.47:933][407]LogTexture:Display: Building textures: Ugmo_Walk3 (AutoDXT)
-[2017.01.31-13.04.50:392][695]BlueprintLog: New page: Compile BP_Ugmo
-[2017.01.31-13.04.51:460][805]LogTemp: Repeting last play command: New Editor Window (PIE)
-[2017.01.31-13.04.51:475][805]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2017.01.31-13.04.51:475][805]PIE: New page: PIE session: level_00 (Jan 31, 2017, 3:04:51 AM)
-[2017.01.31-13.04.51:475][805]LogPlayLevel: Creating play world package: /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00
-[2017.01.31-13.04.51:481][805]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006124s)
-[2017.01.31-13.04.51:481][805]LogAIModule: Creating AISystem for world level_00
-[2017.01.31-13.04.51:482][805]LogPlayLevel: PIE: World Init took: (0.000693s)
-[2017.01.31-13.04.51:482][805]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ShantaesRipoff/Maps/level_00.level_00 to /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00.level_00 (0.007038s)
-[2017.01.31-13.04.51:505][805]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
-[2017.01.31-13.04.51:513][805]LogInit: FAudioDevice initialized.
-[2017.01.31-13.04.51:560][805]LogLoad: Game class is '2DSideScrollerGameMode_C'
-[2017.01.31-13.04.51:568][805]LogWorld: Bringing World /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00.level_00 up for play (max tick rate 0) at 2017.01.31-08.04.51
-[2017.01.31-13.04.51:569][805]LogWorld: Bringing up level for play took: 0.006620
-[2017.01.31-13.04.51:572][805]PIE:Warning: Warning The widget 'Widget_HUD_C' was already added to the screen.
-[2017.01.31-13.04.51:580][805]PIE: Info Play in editor start time for /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00 0.944
-[2017.01.31-13.04.54:665][ 74]BlueprintLog: New page: Compile BP_Ugmo
-[2017.01.31-13.05.06:177][430]BlueprintLog: New page: Compile BP_Ugmo
-[2017.01.31-13.05.06:983][509]LogTemp: Repeting last play command: New Editor Window (PIE)
-[2017.01.31-13.05.06:997][509]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2017.01.31-13.05.06:997][509]PIE: New page: PIE session: level_00 (Jan 31, 2017, 3:05:06 AM)
-[2017.01.31-13.05.06:997][509]LogPlayLevel: Creating play world package: /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00
-[2017.01.31-13.05.07:003][509]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005948s)
-[2017.01.31-13.05.07:004][509]LogAIModule: Creating AISystem for world level_00
-[2017.01.31-13.05.07:004][509]LogPlayLevel: PIE: World Init took: (0.000666s)
-[2017.01.31-13.05.07:004][509]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ShantaesRipoff/Maps/level_00.level_00 to /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00.level_00 (0.006855s)
-[2017.01.31-13.05.07:027][509]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
-[2017.01.31-13.05.07:034][509]LogInit: FAudioDevice initialized.
-[2017.01.31-13.05.07:079][509]LogLoad: Game class is '2DSideScrollerGameMode_C'
-[2017.01.31-13.05.07:083][509]LogWorld: Bringing World /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00.level_00 up for play (max tick rate 0) at 2017.01.31-08.05.07
-[2017.01.31-13.05.07:084][509]LogWorld: Bringing up level for play took: 0.003384
-[2017.01.31-13.05.07:085][509]PIE:Warning: Warning The widget 'Widget_HUD_C' was already added to the screen.
-[2017.01.31-13.05.07:090][509]PIE: Info Play in editor start time for /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00 0.454
-[2017.01.31-13.05.11:606][924]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (M_Sidewalk_L2)
-[2017.01.31-13.05.11:861][937]LogSavePackage: Save=64.13ms
-[2017.01.31-13.05.11:861][937]LogSavePackage: Moving '../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Saved/level_00BEDC07224A7DADF9D4258D801601A408.tmp' to '../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Content/ShantaesRipoff/Maps/level_00.umap'
-[2017.01.31-13.05.11:863][937]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Content/ShantaesRipoff/Maps/level_00.umap
-[2017.01.31-13.05.27:119][273]LogTemp: Repeting last play command: New Editor Window (PIE)
-[2017.01.31-13.05.27:134][273]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2017.01.31-13.05.27:134][273]PIE: New page: PIE session: level_00 (Jan 31, 2017, 3:05:27 AM)
-[2017.01.31-13.05.27:135][273]LogPlayLevel: Creating play world package: /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00
-[2017.01.31-13.05.27:141][273]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005988s)
-[2017.01.31-13.05.27:141][273]LogAIModule: Creating AISystem for world level_00
-[2017.01.31-13.05.27:141][273]LogPlayLevel: PIE: World Init took: (0.000658s)
-[2017.01.31-13.05.27:141][273]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ShantaesRipoff/Maps/level_00.level_00 to /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00.level_00 (0.006883s)
-[2017.01.31-13.05.27:164][273]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
-[2017.01.31-13.05.27:172][273]LogInit: FAudioDevice initialized.
-[2017.01.31-13.05.27:219][273]LogLoad: Game class is '2DSideScrollerGameMode_C'
-[2017.01.31-13.05.27:223][273]LogWorld: Bringing World /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00.level_00 up for play (max tick rate 0) at 2017.01.31-08.05.27
-[2017.01.31-13.05.27:223][273]LogWorld: Bringing up level for play took: 0.003751
-[2017.01.31-13.05.27:225][273]PIE:Warning: Warning The widget 'Widget_HUD_C' was already added to the screen.
-[2017.01.31-13.05.27:229][273]PIE: Info Play in editor start time for /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00 0.593
-[2017.01.31-13.05.34:288][967]LogTemp: Repeting last play command: New Editor Window (PIE)
-[2017.01.31-13.05.34:303][967]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2017.01.31-13.05.34:303][967]PIE: New page: PIE session: level_00 (Jan 31, 2017, 3:05:34 AM)
-[2017.01.31-13.05.34:303][967]LogPlayLevel: Creating play world package: /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00
-[2017.01.31-13.05.34:310][967]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006107s)
-[2017.01.31-13.05.34:310][967]LogAIModule: Creating AISystem for world level_00
-[2017.01.31-13.05.34:310][967]LogPlayLevel: PIE: World Init took: (0.000574s)
-[2017.01.31-13.05.34:310][967]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ShantaesRipoff/Maps/level_00.level_00 to /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00.level_00 (0.006943s)
-[2017.01.31-13.05.34:334][967]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
-[2017.01.31-13.05.34:342][967]LogInit: FAudioDevice initialized.
-[2017.01.31-13.05.34:389][967]LogLoad: Game class is '2DSideScrollerGameMode_C'
-[2017.01.31-13.05.34:392][967]LogWorld: Bringing World /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00.level_00 up for play (max tick rate 0) at 2017.01.31-08.05.34
-[2017.01.31-13.05.34:393][967]LogWorld: Bringing up level for play took: 0.003426
-[2017.01.31-13.05.34:394][967]PIE:Warning: Warning The widget 'Widget_HUD_C' was already added to the screen.
-[2017.01.31-13.05.34:399][967]PIE: Info Play in editor start time for /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00 -0.237
-[2017.01.31-13.06.11:664][963]LogSavePackage: Save=41.27ms
-[2017.01.31-13.06.11:664][963]LogSavePackage: Moving '../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Saved/BP_UgmoC588746D4B98E31DEFE718A532CA1066.tmp' to '../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Content/ShantaesRipoff/Blueprint/BP_Ugmo.uasset'
-[2017.01.31-13.06.11:666][963]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Content/ShantaesRipoff/Blueprint/BP_Ugmo.uasset
-[2017.01.31-13.06.15:552][409]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
-[2017.01.31-13.06.15:755][410]Cmd: QUIT_EDITOR
-[2017.01.31-13.06.15:950][410]LogExit: Preparing to exit.
-[2017.01.31-13.06.16:290][410]LogDirectoryWatcher: A directory notification for 'C:/Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Content/' was aborted.
-[2017.01.31-13.06.16:333][410]LogExit: Editor shut down
-[2017.01.31-13.06.16:334][410]LogExit: Transaction tracking system shut down
-[2017.01.31-13.06.16:425][410]LogObj: Freed 0b from 0 cluster array pools.
-[2017.01.31-13.06.16:425][410]LogExit: Object subsystem successfully closed.
-[2017.01.31-13.06.16:438][410]LogD3D11RHI: Shutdown
-[2017.01.31-13.06.16:438][410]LogD3D11RHI: CleanupD3DDevice
-[2017.01.31-13.06.16:527][410]LogD3D11RHI: ~FD3D11DynamicRHI
-[2017.01.31-13.06.16:539][410]LogHttp:Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
-[2017.01.31-13.06.16:539][410]LogHttp:Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B805C0A48-4D92-3D59-4ADF-16AF31783805%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.14.3-3249277%2B%2B%2BUE4%2BRelease-4.14&UserID=432ba7df4ad6bae0ec2354b7fc35a1e0%7C4a54d2d7bb754e88b4669d72009f5046%7C097e5d8a-9fc2-49b4-984a-3ac3ca64eac4&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
-[2017.01.31-13.06.16:546][410]LogModuleManager: Shutting down and abandoning module BlueprintGraph (246)
-[2017.01.31-13.06.16:546][410]LogModuleManager: Shutting down and abandoning module BlueprintProfiler (245)
-[2017.01.31-13.06.16:546][410]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (244)
-[2017.01.31-13.06.16:546][410]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (243)
-[2017.01.31-13.06.16:546][410]LogModuleManager: Shutting down and abandoning module CrashTracker (242)
-[2017.01.31-13.06.16:546][410]LogModuleManager: Shutting down and abandoning module SceneOutliner (241)
-[2017.01.31-13.06.16:546][410]LogModuleManager: Shutting down and abandoning module WidgetCarousel (240)
-[2017.01.31-13.06.16:546][410]LogModuleManager: Shutting down and abandoning module AddContentDialog (239)
-[2017.01.31-13.06.16:546][410]LogDirectoryWatcher: A directory notification for 'C:/Program Files (x86)/Epic Games/4.14/FeaturePacks/' was aborted.
-[2017.01.31-13.06.16:547][410]LogModuleManager: Shutting down and abandoning module GameplayTags (238)
-[2017.01.31-13.06.16:547][410]LogModuleManager: Shutting down and abandoning module EditorWidgets (237)
-[2017.01.31-13.06.16:547][410]LogModuleManager: Shutting down and abandoning module CollectionManager (236)
-[2017.01.31-13.06.16:547][410]LogDirectoryWatcher: A directory notification for 'C:/Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Content/Collections/' was aborted.
-[2017.01.31-13.06.16:547][410]LogDirectoryWatcher: A directory notification for 'C:/Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Content/Developers/Tak/Collections/' was aborted.
-[2017.01.31-13.06.16:547][410]LogDirectoryWatcher: A directory notification for 'C:/Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Saved/Collections/' was aborted.
-[2017.01.31-13.06.16:547][410]LogModuleManager: Shutting down and abandoning module StatsViewer (235)
-[2017.01.31-13.06.16:547][410]LogModuleManager: Shutting down and abandoning module FoliageEdit (234)
-[2017.01.31-13.06.16:547][410]LogModuleManager: Shutting down and abandoning module LandscapeEditor (233)
-[2017.01.31-13.06.16:547][410]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (232)
-[2017.01.31-13.06.16:547][410]LogModuleManager: Shutting down and abandoning module ActorPickerMode (231)
-[2017.01.31-13.06.16:547][410]LogModuleManager: Shutting down and abandoning module GeometryMode (230)
-[2017.01.31-13.06.16:547][410]LogModuleManager: Shutting down and abandoning module TextureAlignMode (229)
-[2017.01.31-13.06.16:547][410]LogModuleManager: Shutting down and abandoning module BspMode (228)
-[2017.01.31-13.06.16:547][410]LogModuleManager: Shutting down and abandoning module HardwareSurvey (227)
-[2017.01.31-13.06.16:547][410]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (226)
-[2017.01.31-13.06.16:547][410]LogModuleManager: Shutting down and abandoning module AutomationWorker (225)
-[2017.01.31-13.06.16:547][410]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (224)
-[2017.01.31-13.06.16:547][410]LogModuleManager: Shutting down and abandoning module PlacementMode (223)
-[2017.01.31-13.06.16:547][410]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (222)
-[2017.01.31-13.06.16:547][410]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (221)
-[2017.01.31-13.06.16:547][410]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (220)
-[2017.01.31-13.06.16:547][410]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (219)
-[2017.01.31-13.06.16:547][410]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (218)
-[2017.01.31-13.06.16:547][410]LogModuleManager: Shutting down and abandoning module Media (217)
-[2017.01.31-13.06.16:547][410]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (216)
-[2017.01.31-13.06.16:547][410]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (215)
-[2017.01.31-13.06.16:547][410]LogModuleManager: Shutting down and abandoning module CharacterAI (214)
-[2017.01.31-13.06.16:547][410]LogModuleManager: Shutting down and abandoning module SequenceRecorder (213)
-[2017.01.31-13.06.16:547][410]LogModuleManager: Shutting down and abandoning module AudioCapture (212)
-[2017.01.31-13.06.16:547][410]LogModuleManager: Shutting down and abandoning module SmartSnapping (211)
-[2017.01.31-13.06.16:547][410]LogModuleManager: Shutting down and abandoning module SessionServices (210)
-[2017.01.31-13.06.16:548][410]LogModuleManager: Shutting down and abandoning module ViewportSnapping (209)
-[2017.01.31-13.06.16:548][410]LogModuleManager: Shutting down and abandoning module ViewportInteraction (208)
-[2017.01.31-13.06.16:548][410]LogModuleManager: Shutting down and abandoning module LogVisualizer (207)
-[2017.01.31-13.06.16:548][410]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (206)
-[2017.01.31-13.06.16:548][410]LogModuleManager: Shutting down and abandoning module IntroTutorials (205)
-[2017.01.31-13.06.16:548][410]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (204)
-[2017.01.31-13.06.16:548][410]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (203)
-[2017.01.31-13.06.16:548][410]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (202)
-[2017.01.31-13.06.16:548][410]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (201)
-[2017.01.31-13.06.16:905][410]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (200)
-[2017.01.31-13.06.16:905][410]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (199)
-[2017.01.31-13.06.16:905][410]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (198)
-[2017.01.31-13.06.16:905][410]LogModuleManager: Shutting down and abandoning module InputBindingEditor (197)
-[2017.01.31-13.06.16:905][410]LogModuleManager: Shutting down and abandoning module NiagaraEditor (196)
-[2017.01.31-13.06.16:905][410]LogModuleManager: Shutting down and abandoning module MergeActors (195)
-[2017.01.31-13.06.16:905][410]LogModuleManager: Shutting down and abandoning module SizeMap (194)
-[2017.01.31-13.06.16:905][410]LogModuleManager: Shutting down and abandoning module TreeMap (193)
-[2017.01.31-13.06.16:905][410]LogModuleManager: Shutting down and abandoning module ReferenceViewer (192)
-[2017.01.31-13.06.16:905][410]LogModuleManager: Shutting down and abandoning module LocalizationService (191)
-[2017.01.31-13.06.16:905][410]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (190)
-[2017.01.31-13.06.16:905][410]LogModuleManager: Shutting down and abandoning module HardwareTargeting (189)
-[2017.01.31-13.06.16:905][410]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (188)
-[2017.01.31-13.06.16:905][410]LogModuleManager: Shutting down and abandoning module UndoHistory (187)
-[2017.01.31-13.06.16:905][410]LogModuleManager: Shutting down and abandoning module UserFeedback (186)
-[2017.01.31-13.06.16:905][410]LogModuleManager: Shutting down and abandoning module XmlParser (185)
-[2017.01.31-13.06.16:905][410]LogModuleManager: Shutting down and abandoning module Blutility (184)
-[2017.01.31-13.06.16:905][410]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (183)
-[2017.01.31-13.06.16:905][410]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (182)
-[2017.01.31-13.06.16:905][410]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (181)
-[2017.01.31-13.06.16:905][410]LogModuleManager: Shutting down and abandoning module SettingsEditor (180)
-[2017.01.31-13.06.16:905][410]LogModuleManager: Shutting down and abandoning module ProjectLauncher (179)
-[2017.01.31-13.06.16:905][410]LogModuleManager: Shutting down and abandoning module SessionFrontend (178)
-[2017.01.31-13.06.16:905][410]LogModuleManager: Shutting down and abandoning module ProfilerClient (177)
-[2017.01.31-13.06.16:905][410]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (176)
-[2017.01.31-13.06.16:905][410]LogModuleManager: Shutting down and abandoning module DeviceManager (175)
-[2017.01.31-13.06.16:948][410]LogModuleManager: Shutting down and abandoning module AutomationController (174)
-[2017.01.31-13.06.16:948][410]LogModuleManager: Shutting down and abandoning module AutomationWindow (173)
-[2017.01.31-13.06.16:948][410]LogModuleManager: Shutting down and abandoning module Layers (172)
-[2017.01.31-13.06.16:948][410]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (171)
-[2017.01.31-13.06.16:948][410]LogModuleManager: Shutting down and abandoning module DetailCustomizations (170)
-[2017.01.31-13.06.16:948][410]LogModuleManager: Shutting down and abandoning module PackagesDialog (169)
-[2017.01.31-13.06.16:948][410]LogModuleManager: Shutting down and abandoning module AnimGraph (168)
-[2017.01.31-13.06.16:948][410]LogModuleManager: Shutting down and abandoning module Persona (167)
-[2017.01.31-13.06.16:948][410]LogModuleManager: Shutting down and abandoning module Kismet (166)
-[2017.01.31-13.06.16:953][410]LogModuleManager: Shutting down and abandoning module GraphEditor (165)
-[2017.01.31-13.06.16:953][410]LogModuleManager: Shutting down and abandoning module ClassViewer (164)
-[2017.01.31-13.06.16:953][410]LogModuleManager: Shutting down and abandoning module Toolbox (163)
-[2017.01.31-13.06.16:953][410]LogModuleManager: Shutting down and abandoning module ModuleUI (162)
-[2017.01.31-13.06.16:953][410]LogModuleManager: Shutting down and abandoning module MovieSceneTools (161)
-[2017.01.31-13.06.16:953][410]LogModuleManager: Shutting down and abandoning module OutputLog (160)
-[2017.01.31-13.06.16:953][410]LogModuleManager: Shutting down and abandoning module GammaUI (159)
-[2017.01.31-13.06.16:953][410]LogModuleManager: Shutting down and abandoning module Documentation (158)
-[2017.01.31-13.06.16:953][410]LogModuleManager: Shutting down and abandoning module Niagara (157)
-[2017.01.31-13.06.16:954][410]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (156)
-[2017.01.31-13.06.16:954][410]LogModuleManager: Shutting down and abandoning module AnalyticsET (155)
-[2017.01.31-13.06.16:954][410]LogModuleManager: Shutting down and abandoning module PortalServices (154)
-[2017.01.31-13.06.16:954][410]LogModuleManager: Shutting down and abandoning module PortalRpc (153)
-[2017.01.31-13.06.16:954][410]LogModuleManager: Shutting down and abandoning module MessagingRpc (152)
-[2017.01.31-13.06.16:954][410]LogModuleManager: Shutting down and abandoning module GameplayDebugger (151)
-[2017.01.31-13.06.16:954][410]LogModuleManager: Shutting down and abandoning module AITestSuite (150)
-[2017.01.31-13.06.16:954][410]LogModuleManager: Shutting down and abandoning module AIModule (149)
-[2017.01.31-13.06.16:954][410]LogModuleManager: Shutting down and abandoning module ProfilerService (148)
-[2017.01.31-13.06.17:027][410]LogModuleManager: Shutting down and abandoning module TaskGraph (147)
-[2017.01.31-13.06.17:027][410]LogModuleManager: Shutting down and abandoning module SubstanceEditor (146)
-[2017.01.31-13.06.17:027][410]LogModuleManager: Shutting down and abandoning module SlateRemote (145)
-[2017.01.31-13.06.17:027][410]LogModuleManager: Shutting down and abandoning module SteamVRController (144)
-[2017.01.31-13.06.17:027][410]LogModuleManager: Shutting down and abandoning module SteamVR (143)
-[2017.01.31-13.06.17:027][410]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (142)
-[2017.01.31-13.06.17:027][410]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (141)
-[2017.01.31-13.06.17:027][410]LogModuleManager: Shutting down and abandoning module OculusLibrary (140)
-[2017.01.31-13.06.17:027][410]LogModuleManager: Shutting down and abandoning module OculusInput (139)
-[2017.01.31-13.06.17:027][410]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (138)
-[2017.01.31-13.06.17:027][410]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (137)
-[2017.01.31-13.06.17:027][410]LogModuleManager: Shutting down and abandoning module CableComponent (136)
-[2017.01.31-13.06.17:027][410]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (135)
-[2017.01.31-13.06.17:027][410]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (133)
-[2017.01.31-13.06.17:027][410]LogModuleManager: Shutting down and abandoning module HTML5Networking (132)
-[2017.01.31-13.06.17:027][410]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (131)
-[2017.01.31-13.06.17:027][410]LogModuleManager: Shutting down and abandoning module GeometryCache (130)
-[2017.01.31-13.06.17:027][410]LogModuleManager: Shutting down and abandoning module AlembicLibrary (129)
-[2017.01.31-13.06.17:027][410]LogModuleManager: Shutting down and abandoning module AlembicImporter (128)
-[2017.01.31-13.06.17:027][410]LogModuleManager: Shutting down and abandoning module SuperSearch (127)
-[2017.01.31-13.06.17:027][410]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (126)
-[2017.01.31-13.06.17:028][410]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (125)
-[2017.01.31-13.06.17:028][410]LogModuleManager: Shutting down and abandoning module PluginBrowser (124)
-[2017.01.31-13.06.17:028][410]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (123)
-[2017.01.31-13.06.17:028][410]LogModuleManager: Shutting down and abandoning module EpicSurvey (122)
-[2017.01.31-13.06.17:028][410]LogModuleManager: Shutting down and abandoning module DesktopPlatform (121)
-[2017.01.31-13.06.17:028][410]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (120)
-[2017.01.31-13.06.17:028][410]LogModuleManager: Shutting down and abandoning module UObjectPlugin (119)
-[2017.01.31-13.06.17:028][410]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (118)
-[2017.01.31-13.06.17:028][410]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (117)
-[2017.01.31-13.06.17:028][410]LogModuleManager: Shutting down and abandoning module SourceControl (116)
-[2017.01.31-13.06.17:028][410]LogModuleManager: Shutting down and abandoning module GitSourceControl (115)
-[2017.01.31-13.06.17:028][410]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (114)
-[2017.01.31-13.06.17:028][410]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (113)
-[2017.01.31-13.06.17:028][410]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (112)
-[2017.01.31-13.06.17:028][410]LogModuleManager: Shutting down and abandoning module MeshPaint (111)
-[2017.01.31-13.06.17:028][410]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (110)
-[2017.01.31-13.06.17:028][410]LogModuleManager: Shutting down and abandoning module HotReload (109)
-[2017.01.31-13.06.17:028][410]LogDirectoryWatcher: A directory notification for 'C:/Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Binaries/Win64' was aborted.
-[2017.01.31-13.06.17:029][410]LogModuleManager: Shutting down and abandoning module MainFrame (108)
-[2017.01.31-13.06.17:029][410]LogModuleManager: Shutting down and abandoning module LevelEditor (107)
-[2017.01.31-13.06.17:030][410]LogModuleManager: Shutting down and abandoning module ContentBrowser (106)
-[2017.01.31-13.06.17:032][410]LogModuleManager: Shutting down and abandoning module Paper2DEditor (105)
-[2017.01.31-13.06.17:032][410]LogModuleManager: Shutting down and abandoning module UdpMessaging (104)
-[2017.01.31-13.06.17:133][410]LogModuleManager: Shutting down and abandoning module TcpMessaging (103)
-[2017.01.31-13.06.17:233][410]LogModuleManager: Shutting down and abandoning module SubstanceCore (102)
-[2017.01.31-13.06.17:233][410]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (101)
-[2017.01.31-13.06.17:233][410]LogModuleManager: Shutting down and abandoning module Paper2D (100)
-[2017.01.31-13.06.17:233][410]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (99)
-[2017.01.31-13.06.17:233][410]LogModuleManager: Shutting down and abandoning module WmfMedia (98)
-[2017.01.31-13.06.17:234][410]LogModuleManager: Shutting down and abandoning module MediaAssets (97)
-[2017.01.31-13.06.17:234][410]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (96)
-[2017.01.31-13.06.17:234][410]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (95)
-[2017.01.31-13.06.17:234][410]LogModuleManager: Shutting down and abandoning module VREditor (94)
-[2017.01.31-13.06.17:234][410]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (93)
-[2017.01.31-13.06.17:234][410]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (92)
-[2017.01.31-13.06.17:234][410]LogModuleManager: Shutting down and abandoning module FunctionalTesting (91)
-[2017.01.31-13.06.17:234][410]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (90)
-[2017.01.31-13.06.17:234][410]LogModuleManager: Shutting down and abandoning module Sequencer (89)
-[2017.01.31-13.06.17:234][410]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (88)
-[2017.01.31-13.06.17:234][410]LogModuleManager: Shutting down and abandoning module MessageLog (87)
-[2017.01.31-13.06.17:234][410]LogModuleManager: Shutting down and abandoning module AssetTools (86)
-[2017.01.31-13.06.17:235][410]LogModuleManager: Shutting down and abandoning module UMGEditor (85)
-[2017.01.31-13.06.17:235][410]LogModuleManager: Shutting down and abandoning module UMG (84)
-[2017.01.31-13.06.17:235][410]LogModuleManager: Shutting down and abandoning module SlateReflector (83)
-[2017.01.31-13.06.17:235][410]LogModuleManager: Shutting down and abandoning module Slate (82)
-[2017.01.31-13.06.17:235][410]LogModuleManager: Shutting down and abandoning module EditorStyle (81)
-[2017.01.31-13.06.17:247][410]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (80)
-[2017.01.31-13.06.17:248][410]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (79)
-[2017.01.31-13.06.17:248][410]LogModuleManager: Shutting down and abandoning module XAudio2 (78)
-[2017.01.31-13.06.17:248][410]LogModuleManager: Shutting down and abandoning module Networking (76)
-[2017.01.31-13.06.17:248][410]LogModuleManager: Shutting down and abandoning module Core (75)
-[2017.01.31-13.06.17:248][410]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (74)
-[2017.01.31-13.06.17:248][410]LogDirectoryWatcher: A directory notification for '../../../Engine/Content/' was aborted.
-[2017.01.31-13.06.17:248][410]LogDirectoryWatcher: A directory notification for '../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Content/' was aborted.
-[2017.01.31-13.06.17:250][410]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/2D/Paper2D/Content/' was aborted.
-[2017.01.31-13.06.17:252][410]LogModuleManager: Shutting down and abandoning module AssetRegistry (73)
-[2017.01.31-13.06.17:432][410]LogModuleManager: Shutting down and abandoning module KismetCompiler (72)
-[2017.01.31-13.06.17:432][410]LogModuleManager: Shutting down and abandoning module PhysXFormats (71)
-[2017.01.31-13.06.17:432][410]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (70)
-[2017.01.31-13.06.17:432][410]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (69)
-[2017.01.31-13.06.17:432][410]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (68)
-[2017.01.31-13.06.17:432][410]LogModuleManager: Shutting down and abandoning module PropertyEditor (67)
-[2017.01.31-13.06.17:432][410]LogModuleManager: Shutting down and abandoning module MeshUtilities (66)
-[2017.01.31-13.06.17:432][410]LogModuleManager: Shutting down and abandoning module DerivedDataCache (65)
-[2017.01.31-13.06.17:483][410]LogDerivedDataCache: Shutdown
-[2017.01.31-13.06.17:483][410]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (64)
-[2017.01.31-13.06.17:483][410]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (63)
-[2017.01.31-13.06.17:483][410]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (62)
-[2017.01.31-13.06.17:483][410]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (61)
-[2017.01.31-13.06.17:483][410]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (60)
-[2017.01.31-13.06.17:483][410]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (59)
-[2017.01.31-13.06.17:483][410]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (58)
-[2017.01.31-13.06.17:483][410]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (57)
-[2017.01.31-13.06.17:483][410]LogModuleManager: Shutting down and abandoning module ImageWrapper (56)
-[2017.01.31-13.06.17:483][410]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (55)
-[2017.01.31-13.06.17:483][410]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (54)
-[2017.01.31-13.06.17:483][410]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (53)
-[2017.01.31-13.06.17:483][410]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (52)
-[2017.01.31-13.06.17:483][410]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (51)
-[2017.01.31-13.06.17:483][410]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (50)
-[2017.01.31-13.06.17:483][410]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (49)
-[2017.01.31-13.06.17:483][410]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (48)
-[2017.01.31-13.06.17:483][410]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (47)
-[2017.01.31-13.06.17:483][410]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (46)
-[2017.01.31-13.06.17:483][410]LogModuleManager: Shutting down and abandoning module Messaging (45)
-[2017.01.31-13.06.17:483][410]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (44)
-[2017.01.31-13.06.17:483][410]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (43)
-[2017.01.31-13.06.17:483][410]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (42)
-[2017.01.31-13.06.17:483][410]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (41)
-[2017.01.31-13.06.17:483][410]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (40)
-[2017.01.31-13.06.17:483][410]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (39)
-[2017.01.31-13.06.17:483][410]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (38)
-[2017.01.31-13.06.17:483][410]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (37)
-[2017.01.31-13.06.17:483][410]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (36)
-[2017.01.31-13.06.17:483][410]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (35)
-[2017.01.31-13.06.17:483][410]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (34)
-[2017.01.31-13.06.17:483][410]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (33)
-[2017.01.31-13.06.17:483][410]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (32)
-[2017.01.31-13.06.17:483][410]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (31)
-[2017.01.31-13.06.17:483][410]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (30)
-[2017.01.31-13.06.17:483][410]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (29)
-[2017.01.31-13.06.17:483][410]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (28)
-[2017.01.31-13.06.17:483][410]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (27)
-[2017.01.31-13.06.17:483][410]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (26)
-[2017.01.31-13.06.17:483][410]LogModuleManager: Shutting down and abandoning module TargetPlatform (25)
-[2017.01.31-13.06.17:483][410]LogModuleManager: Shutting down and abandoning module InputCore (24)
-[2017.01.31-13.06.17:483][410]LogModuleManager: Shutting down and abandoning module Settings (23)
-[2017.01.31-13.06.17:483][410]LogModuleManager: Shutting down and abandoning module OculusRift (22)
-[2017.01.31-13.06.17:483][410]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (21)
-[2017.01.31-13.06.17:483][410]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (20)
-[2017.01.31-13.06.17:483][410]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (18)
-[2017.01.31-13.06.17:483][410]LogOnline:Display: Unloading online subsystem: NULL
-[2017.01.31-13.06.17:483][410]LogModuleManager: Shutting down and abandoning module SSL (17)
-[2017.01.31-13.06.17:484][410]LogModuleManager: Shutting down and abandoning module HTTP (16)
-[2017.01.31-13.06.17:484][410]LogModuleManager: Shutting down and abandoning module XMPP (15)
-[2017.01.31-13.06.17:484][410]LogModuleManager: Shutting down and abandoning module TextureCompressor (14)
-[2017.01.31-13.06.17:484][410]LogModuleManager: Shutting down and abandoning module ShaderCore (13)
-[2017.01.31-13.06.17:484][410]LogModuleManager: Shutting down and abandoning module Landscape (12)
-[2017.01.31-13.06.17:484][410]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (11)
-[2017.01.31-13.06.17:486][410]LogModuleManager: Shutting down and abandoning module OpenGLDrv (10)
-[2017.01.31-13.06.17:486][410]LogModuleManager: Shutting down and abandoning module D3D11RHI (9)
-[2017.01.31-13.06.17:486][410]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (8)
-[2017.01.31-13.06.17:486][410]LogModuleManager: Shutting down and abandoning module Renderer (7)
-[2017.01.31-13.06.17:486][410]LogModuleManager: Shutting down and abandoning module Engine (6)
-[2017.01.31-13.06.17:486][410]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
-[2017.01.31-13.06.17:486][410]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
-[2017.01.31-13.06.17:486][410]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
-[2017.01.31-13.06.17:486][410]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
-[2017.01.31-13.06.17:486][410]LogModuleManager: Shutting down and abandoning module PakFile (1)
-[2017.01.31-13.06.17:488][410]LogExit: Exiting.
-[2017.01.31-13.06.17:489][410]Log file closed, 01/31/17 08:06:17
+[2017.01.31-20.54.44:600][  0]LogInit: Selected Device Profile: [Windows]
+[2017.01.31-20.54.44:600][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2017.01.31-20.54.44:627][  0]LogInit: Computer: TAK-FALCONARROW
+[2017.01.31-20.54.44:627][  0]LogInit: User: Tak
+[2017.01.31-20.54.44:627][  0]LogInit: CPU Page size=65536, Cores=4
+[2017.01.31-20.54.44:627][  0]LogInit: High frequency timer resolution =3.318395 MHz
+[2017.01.31-20.54.44:627][  0]LogMemory: Memory total: Physical=7.9GB (8GB approx)
+[2017.01.31-20.54.44:627][  0]LogMemory: Platform Memory Stats for Windows
+[2017.01.31-20.54.44:627][  0]LogMemory: Process Physical Memory: 263.91 MB used, 263.91 MB peak
+[2017.01.31-20.54.44:627][  0]LogMemory: Process Virtual Memory: 262.54 MB used, 262.54 MB peak
+[2017.01.31-20.54.44:627][  0]LogMemory: Physical Memory: 3972.69 MB used,  4157.23 MB free, 8129.92 MB total
+[2017.01.31-20.54.44:627][  0]LogMemory: Virtual Memory: 675.55 MB used,  4157.23 MB free, 134217728.00 MB total
+[2017.01.31-20.54.44:650][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
+[2017.01.31-20.54.45:223][  0]LogD3D11RHI: D3D11 adapters:
+[2017.01.31-20.54.45:750][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 760' (Feature Level 11_0)
+[2017.01.31-20.54.45:750][  0]LogD3D11RHI:       2017/0/4064 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
+[2017.01.31-20.54.45:751][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2017.01.31-20.54.45:751][  0]LogD3D11RHI:       0/0/4064 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2017.01.31-20.54.45:751][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2017.01.31-20.54.45:754][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2017.01.31-20.54.45:754][  0]LogD3D11RHI:     GPU DeviceId: 0x1187 (for the marketing name, search the web for "GPU Device Id")
+[2017.01.31-20.54.45:754][  0]LogWindows: EnumDisplayDevices:
+[2017.01.31-20.54.45:754][  0]LogWindows:    0. 'NVIDIA GeForce GTX 760' (P:1 D:1)
+[2017.01.31-20.54.45:755][  0]LogWindows:    1. 'NVIDIA GeForce GTX 760' (P:0 D:1)
+[2017.01.31-20.54.45:755][  0]LogWindows:    2. 'NVIDIA GeForce GTX 760' (P:0 D:0)
+[2017.01.31-20.54.45:755][  0]LogWindows:    3. 'NVIDIA GeForce GTX 760' (P:0 D:0)
+[2017.01.31-20.54.45:755][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2017.01.31-20.54.45:755][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 760
+[2017.01.31-20.54.45:755][  0]LogD3D11RHI:   Driver Version: 376.09 (internal:21.21.13.7609, unified:376.09)
+[2017.01.31-20.54.45:755][  0]LogD3D11RHI:      Driver Date: 11-24-2016
+[2017.01.31-20.54.45:755][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2017.01.31-20.54.46:263][  0]LogD3D11RHI:Warning: Timestamp queries are currently disabled on this hardware due to instability. Realtime GPU stats will not be available. You can override this behaviour by setting r.NVIDIATimestampWorkaround to 0
+[2017.01.31-20.54.46:263][  0]LogD3D11RHI: Async texture creation enabled
+[2017.01.31-20.54.46:290][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2017.01.31-20.54.46:290][  0]LogShaderCompilers: Guid format shader working directory is -25 characters bigger than the processId version (../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Intermediate/Shaders/WorkingDirectory/8764/).
+[2017.01.31-20.54.46:290][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Tak/AppData/Local/Temp/UnrealShaderWorkingDir/A7895D884B8C133B88F2E18F3E8A48EE/'.
+[2017.01.31-20.54.46:290][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2017.01.31-20.54.47:248][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2017.01.31-20.54.47:296][  0]LogTemp:Display: Loaded TP MacClientTargetPlatform
+[2017.01.31-20.54.47:343][  0]LogTemp:Display: Loaded TP MacNoEditorTargetPlatform
+[2017.01.31-20.54.47:392][  0]LogTemp:Display: Loaded TP MacServerTargetPlatform
+[2017.01.31-20.54.47:443][  0]LogTemp:Display: Loaded TP MacTargetPlatform
+[2017.01.31-20.54.47:492][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2017.01.31-20.54.47:542][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2017.01.31-20.54.47:592][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2017.01.31-20.54.47:633][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2017.01.31-20.54.47:680][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2017.01.31-20.54.47:728][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2017.01.31-20.54.47:777][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2017.01.31-20.54.47:826][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2017.01.31-20.54.47:874][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2017.01.31-20.54.47:921][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2017.01.31-20.54.48:017][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2017.01.31-20.54.48:017][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2017.01.31-20.54.48:050][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2017.01.31-20.54.48:128][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2017.01.31-20.54.48:160][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2017.01.31-20.54.48:211][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
+[2017.01.31-20.54.48:260][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2017.01.31-20.54.48:308][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2017.01.31-20.54.48:356][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2017.01.31-20.54.48:356][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2017.01.31-20.54.48:703][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2017.01.31-20.54.48:750][  0]LogDerivedDataCache: Loaded boot cache 0.05s 50MB C:/Users/Tak/AppData/Local/UnrealEngine/4.14/DerivedDataCache/Boot.ddc.
+[2017.01.31-20.54.48:750][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Tak/AppData/Local/UnrealEngine/4.14/DerivedDataCache/Boot.ddc
+[2017.01.31-20.54.48:750][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2017.01.31-20.54.48:750][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2017.01.31-20.54.48:750][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2017.01.31-20.54.48:750][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2017.01.31-20.54.48:766][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2017.01.31-20.54.48:778][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Tak/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2017.01.31-20.54.49:063][  0]LogInit: Selected Device Profile: [Windows]
+[2017.01.31-20.54.49:065][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2017.01.31-20.54.49:247][  0]LogMeshUtilities: Using QuadricMeshReduction for automatic static mesh reduction
+[2017.01.31-20.54.49:283][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2017.01.31-20.54.49:325][  0]LogMeshUtilities: Using SimplygonSwarm for distributed automatic mesh merging
+[2017.01.31-20.54.49:325][  0]LogMeshUtilities: No automatic skeletal mesh reduction module available
+[2017.01.31-20.54.49:325][  0]LogMeshUtilities: No automatic mesh merging module available
+[2017.01.31-20.54.49:759][  0]LogNetVersion: GetLocalNetworkVersion: CL: 3195953, ProjectName: shantaeripoff, ProjectVersion: , EngineNetworkVersion: 2, GameNetworkVersion: 0, NetworkChecksum: 157577820
+[2017.01.31-20.54.49:813][  0]LogAssetRegistry: FAssetRegistry took 0.0222 seconds to start up
+[2017.01.31-20.54.49:861][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 2 prioritized culture(s) in 0.026268 seconds
+[2017.01.31-20.54.49:868][  0]LogUObjectArray: 31946 objects as part of root set at end of initial load.
+[2017.01.31-20.54.49:868][  0]LogUObjectAllocator: 6935848 out of 0 bytes used by permanent object pool.
+[2017.01.31-20.54.49:868][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2017.01.31-20.54.49:937][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2017.01.31-20.54.50:634][  0]LogSlate: Using Freetype 2.6.0
+[2017.01.31-20.54.50:635][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.01.31-20.54.50:635][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.01.31-20.54.51:417][  0]LogSubstanceCoreModule: Substance [CPU] Engine Loaded, Max Texture Size = 2048
+[2017.01.31-20.54.51:443][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2017.01.31-20.54.51:482][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2017.01.31-20.54.51:751][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2017.01.31-20.54.52:117][  0]SourceControl: Info Source control is disabled
+[2017.01.31-20.54.52:118][  0]SourceControl: Info Source control is disabled
+[2017.01.31-20.54.52:162][  0]SourceControl: Info Source control is disabled
+[2017.01.31-20.54.52:203][  0]SourceControl: Info Source control is disabled
+[2017.01.31-20.54.53:404][  0]LogEngine: Initializing Engine...
+[2017.01.31-20.54.53:405][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2017.01.31-20.54.53:622][  0]LogAIModule: Creating AISystem for world Untitled
+[2017.01.31-20.54.53:638][  0]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.01.31-20.54.53:667][  0]LogInit: FAudioDevice initialized.
+[2017.01.31-20.54.53:698][  0]LogDerivedDataCache: Saved boot cache 0.03s 50MB C:/Users/Tak/AppData/Local/UnrealEngine/4.14/DerivedDataCache/Boot.ddc.
+[2017.01.31-20.54.53:706][  0]LogInit: Texture streaming: Enabled
+[2017.01.31-20.54.53:893][  0]LogInit: Transaction tracking system initialized
+[2017.01.31-20.54.54:204][  0]BlueprintLog: New page: Editor Load
+[2017.01.31-20.54.55:000][  0]LocalizationService: Info Localization service is disabled
+[2017.01.31-20.54.55:623][  0]LogConsoleResponse:Display: 
+[2017.01.31-20.54.55:768][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2017.01.31-20.54.55:768][  0]LogCook:Display: Mobile HDR setting 1
+[2017.01.31-20.54.56:601][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Content/' took 0.02s
+[2017.01.31-20.54.56:642][  0]SourceControl: Info Source control is disabled
+[2017.01.31-20.54.56:642][  0]Cmd: MAP LOAD FILE="../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Content/ShantaesRipoff/Maps/level_00.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.01.31-20.54.56:643][  0]LightingResults: New page: Lighting Build
+[2017.01.31-20.54.56:692][  0]MapCheck: New page: Map Check
+[2017.01.31-20.54.56:693][  0]LightingResults: New page: Lighting Build
+[2017.01.31-20.55.00:744][  0]LogAIModule: Creating AISystem for world level_00
+[2017.01.31-20.55.00:854][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.01.31-20.55.00:856][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.01.31-20.55.00:910][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 53.572ms to complete.
+[2017.01.31-20.55.00:910][  0]LogFileHelpers: Loading map 'level_00' took 4.267
+[2017.01.31-20.55.01:251][  0]LogCollectionManager: Loaded 1 collections in 0.005176 seconds
+[2017.01.31-20.55.01:328][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Saved/Collections/' took 0.01s
+[2017.01.31-20.55.01:328][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Content/Developers/Tak/Collections/' took 0.01s
+[2017.01.31-20.55.01:328][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Content/Collections/' took 0.01s
+[2017.01.31-20.55.01:328][  0]LogCollectionManager: Rebuilt the GUID cache for 1 collections in 0.000004 seconds
+[2017.01.31-20.55.01:328][  0]LogCollectionManager: Rebuilt the hierarchy cache for 1 collections in 0.000000 seconds
+[2017.01.31-20.55.01:338][  0]LogContentBrowser: Native class hierarchy populated in 0.0103 seconds. Added 2204 classes and 434 folders.
+[2017.01.31-20.55.01:378][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2017.01.31-20.55.01:378][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2017.01.31-20.55.01:379][  0]LogContentBrowser: Native class hierarchy updated for 'GameplayTags' in 0.0015 seconds. Added 13 classes and 0 folders.
+[2017.01.31-20.55.01:435][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0014 seconds. Added 0 classes and 0 folders.
+[2017.01.31-20.55.02:468][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0048 seconds. Added 0 classes and 0 folders.
+[2017.01.31-20.55.02:540][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0012 seconds. Added 1 classes and 2 folders.
+[2017.01.31-20.55.02:627][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2017.01.31-20.55.02:633][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2017.01.31-20.55.02:709][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0017 seconds. Added 1 classes and 2 folders.
+[2017.01.31-20.55.02:710][  0]LogLoad: (Engine Initialization) Total time: 20.11 seconds
+[2017.01.31-20.55.02:710][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.12 seconds
+[2017.01.31-20.55.02:710][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2017.01.31-20.55.02:710][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2017.01.31-20.55.03:049][  0]LogOcInput: OculusInput pre-init called
+[2017.01.31-20.55.03:068][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2017.01.31-20.55.03:392][  0]LogRenderer: Reallocating scene render targets to support 984x572 NumSamples 1 (Frame:2).
+[2017.01.31-20.55.03:845][  2]LogAssetRegistry: Asset discovery search completed in 14.0543 seconds
+[2017.01.31-20.55.03:845][  2]LogCollectionManager: Rebuilt the object cache for 1 collections in 0.000007 seconds (found 0 objects)
+[2017.01.31-20.55.03:845][  2]LogCollectionManager: Fixed up redirectors for 1 collections in 0.000021 seconds (updated 0 objects)
+[2017.01.31-20.55.07:500][ 13]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2017.01.31-20.55.07:517][ 13]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.01.31-20.55.07:518][ 13]PIE: New page: PIE session: level_00 (Jan 31, 2017, 10:55:07 AM)
+[2017.01.31-20.55.07:518][ 13]LogPlayLevel: Creating play world package: /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00
+[2017.01.31-20.55.07:525][ 13]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006877s)
+[2017.01.31-20.55.07:525][ 13]LogAIModule: Creating AISystem for world level_00
+[2017.01.31-20.55.07:525][ 13]LogPlayLevel: PIE: World Init took: (0.000720s)
+[2017.01.31-20.55.07:525][ 13]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ShantaesRipoff/Maps/level_00.level_00 to /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00.level_00 (0.007816s)
+[2017.01.31-20.55.07:550][ 13]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.01.31-20.55.07:558][ 13]LogInit: FAudioDevice initialized.
+[2017.01.31-20.55.07:631][ 13]LogLoad: Game class is '2DSideScrollerGameMode_C'
+[2017.01.31-20.55.07:640][ 13]LogWorld: Bringing World /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00.level_00 up for play (max tick rate 0) at 2017.01.31-15.55.07
+[2017.01.31-20.55.07:642][ 13]LogWorld: Bringing up level for play took: 0.007517
+[2017.01.31-20.55.07:697][ 13]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0015 seconds. Added 11 classes and 0 folders.
+[2017.01.31-20.55.07:699][ 13]PIE:Warning: Warning The widget 'Widget_HUD_C' was already added to the screen.
+[2017.01.31-20.55.07:703][ 13]PIE: Info Play in editor start time for /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00 -0.668
+[2017.01.31-20.55.07:876][ 13]LogRenderer: Reallocating scene render targets to support 1292x756 NumSamples 1 (Frame:5).
+[2017.01.31-20.55.19:562][114]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0017 seconds. Added 111 classes and 0 folders.
+[2017.01.31-20.55.59:935][403]BlueprintLog: New page: Compile BP_Ugmo
+[2017.01.31-20.56.00:890][478]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2017.01.31-20.56.00:910][478]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.01.31-20.56.00:910][478]PIE: New page: PIE session: level_00 (Jan 31, 2017, 10:56:00 AM)
+[2017.01.31-20.56.00:911][478]LogPlayLevel: Creating play world package: /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00
+[2017.01.31-20.56.00:917][478]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006214s)
+[2017.01.31-20.56.00:917][478]LogAIModule: Creating AISystem for world level_00
+[2017.01.31-20.56.00:917][478]LogPlayLevel: PIE: World Init took: (0.000596s)
+[2017.01.31-20.56.00:918][478]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ShantaesRipoff/Maps/level_00.level_00 to /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00.level_00 (0.007007s)
+[2017.01.31-20.56.00:940][478]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.01.31-20.56.00:949][478]LogInit: FAudioDevice initialized.
+[2017.01.31-20.56.00:992][478]LogLoad: Game class is '2DSideScrollerGameMode_C'
+[2017.01.31-20.56.00:996][478]LogWorld: Bringing World /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00.level_00 up for play (max tick rate 0) at 2017.01.31-15.56.00
+[2017.01.31-20.56.00:997][478]LogWorld: Bringing up level for play took: 0.003577
+[2017.01.31-20.56.00:998][478]PIE:Warning: Warning The widget 'Widget_HUD_C' was already added to the screen.
+[2017.01.31-20.56.01:003][478]PIE: Info Play in editor start time for /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00 0.632
+[2017.01.31-20.56.34:216][224]LogSavePackage: Save=39.79ms
+[2017.01.31-20.56.34:216][224]LogSavePackage: Moving '../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Saved/BP_UgmoF3F425274E7476BA692979BCCDD0990E.tmp' to '../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Content/ShantaesRipoff/Blueprint/BP_Ugmo.uasset'
+[2017.01.31-20.56.34:219][224]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Content/ShantaesRipoff/Blueprint/BP_Ugmo.uasset
+[2017.01.31-20.56.54:409][214]BlueprintLog: New page: Compile BP_Ugmo
+[2017.01.31-20.56.56:368][406]LogSavePackage: Save=36.17ms
+[2017.01.31-20.56.56:368][406]LogSavePackage: Moving '../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Saved/BP_Ugmo05C32CCE45D4F9C70D9549A7E53A538D.tmp' to '../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Content/ShantaesRipoff/Blueprint/BP_Ugmo.uasset'
+[2017.01.31-20.56.56:370][406]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Content/ShantaesRipoff/Blueprint/BP_Ugmo.uasset
+[2017.01.31-20.56.58:049][593]LogSavePackage: Save=63.19ms
+[2017.01.31-20.56.58:049][593]LogSavePackage: Moving '../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Saved/level_0028EEF3EB4D0051256382C29889D8C644.tmp' to '../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Content/ShantaesRipoff/Maps/level_00.umap'
+[2017.01.31-20.56.58:051][593]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Content/ShantaesRipoff/Maps/level_00.umap
+[2017.01.31-20.56.58:766][674]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2017.01.31-20.56.58:792][674]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.01.31-20.56.58:793][674]PIE: New page: PIE session: level_00 (Jan 31, 2017, 10:56:58 AM)
+[2017.01.31-20.56.58:793][674]LogPlayLevel: Creating play world package: /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00
+[2017.01.31-20.56.58:799][674]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005860s)
+[2017.01.31-20.56.58:799][674]LogAIModule: Creating AISystem for world level_00
+[2017.01.31-20.56.58:800][674]LogPlayLevel: PIE: World Init took: (0.000587s)
+[2017.01.31-20.56.58:800][674]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ShantaesRipoff/Maps/level_00.level_00 to /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00.level_00 (0.006643s)
+[2017.01.31-20.56.58:824][674]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.01.31-20.56.58:832][674]LogInit: FAudioDevice initialized.
+[2017.01.31-20.56.58:876][674]LogLoad: Game class is '2DSideScrollerGameMode_C'
+[2017.01.31-20.56.58:879][674]LogWorld: Bringing World /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00.level_00 up for play (max tick rate 0) at 2017.01.31-15.56.58
+[2017.01.31-20.56.58:880][674]LogWorld: Bringing up level for play took: 0.003428
+[2017.01.31-20.56.58:881][674]PIE:Warning: Warning The widget 'Widget_HUD_C' was already added to the screen.
+[2017.01.31-20.56.58:885][674]PIE: Info Play in editor start time for /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00 0.515
+[2017.01.31-21.00.10:620][836]BlueprintLog: New page: Compile BP_Dude
+[2017.01.31-21.00.12:885][ 57]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2017.01.31-21.00.12:905][ 57]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.01.31-21.00.12:905][ 57]PIE: New page: PIE session: level_00 (Jan 31, 2017, 11:00:12 AM)
+[2017.01.31-21.00.12:905][ 57]LogPlayLevel: Creating play world package: /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00
+[2017.01.31-21.00.12:911][ 57]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006095s)
+[2017.01.31-21.00.12:912][ 57]LogAIModule: Creating AISystem for world level_00
+[2017.01.31-21.00.12:912][ 57]LogPlayLevel: PIE: World Init took: (0.000617s)
+[2017.01.31-21.00.12:912][ 57]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ShantaesRipoff/Maps/level_00.level_00 to /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00.level_00 (0.006928s)
+[2017.01.31-21.00.12:936][ 57]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.01.31-21.00.12:944][ 57]LogInit: FAudioDevice initialized.
+[2017.01.31-21.00.12:982][ 57]LogLoad: Game class is '2DSideScrollerGameMode_C'
+[2017.01.31-21.00.12:986][ 57]LogWorld: Bringing World /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00.level_00 up for play (max tick rate 0) at 2017.01.31-16.00.12
+[2017.01.31-21.00.12:986][ 57]LogWorld: Bringing up level for play took: 0.003341
+[2017.01.31-21.00.12:988][ 57]PIE:Warning: Warning The widget 'Widget_HUD_C' was already added to the screen.
+[2017.01.31-21.00.12:991][ 57]PIE: Info Play in editor start time for /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00 0.621
+[2017.01.31-21.00.19:698][721]LogSavePackage: Save=53.58ms
+[2017.01.31-21.00.19:698][721]LogSavePackage: Moving '../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Saved/BP_Dude7C4E4A874F4CD259C8BF5098D9D20F56.tmp' to '../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Content/ShantaesRipoff/Blueprint/BP_Dude.uasset'
+[2017.01.31-21.00.19:700][721]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Content/ShantaesRipoff/Blueprint/BP_Dude.uasset
+[2017.01.31-21.02.29:993][180]BlueprintLog: New page: Compile BP_Dude
+[2017.01.31-21.02.36:710][946]LogSavePackage: Save=53.47ms
+[2017.01.31-21.02.36:710][946]LogSavePackage: Moving '../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Saved/BP_Dude90DE3DB24F808E49456E8CB1DF4DF8DE.tmp' to '../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Content/ShantaesRipoff/Blueprint/BP_Dude.uasset'
+[2017.01.31-21.02.36:712][946]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Content/ShantaesRipoff/Blueprint/BP_Dude.uasset
+[2017.01.31-21.02.37:364][ 24]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2017.01.31-21.02.37:382][ 24]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.01.31-21.02.37:383][ 24]PIE: New page: PIE session: level_00 (Jan 31, 2017, 11:02:37 AM)
+[2017.01.31-21.02.37:383][ 24]LogPlayLevel: Creating play world package: /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00
+[2017.01.31-21.02.37:389][ 24]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005901s)
+[2017.01.31-21.02.37:389][ 24]LogAIModule: Creating AISystem for world level_00
+[2017.01.31-21.02.37:390][ 24]LogPlayLevel: PIE: World Init took: (0.000857s)
+[2017.01.31-21.02.37:390][ 24]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ShantaesRipoff/Maps/level_00.level_00 to /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00.level_00 (0.006983s)
+[2017.01.31-21.02.37:413][ 24]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.01.31-21.02.37:421][ 24]LogInit: FAudioDevice initialized.
+[2017.01.31-21.02.37:468][ 24]LogLoad: Game class is '2DSideScrollerGameMode_C'
+[2017.01.31-21.02.37:471][ 24]LogWorld: Bringing World /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00.level_00 up for play (max tick rate 0) at 2017.01.31-16.02.37
+[2017.01.31-21.02.37:471][ 24]LogWorld: Bringing up level for play took: 0.002818
+[2017.01.31-21.02.37:473][ 24]PIE:Warning: Warning The widget 'Widget_HUD_C' was already added to the screen.
+[2017.01.31-21.02.37:479][ 24]PIE: Info Play in editor start time for /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00 -0.891
+[2017.01.31-21.03.26:194][933]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (M_House3)
+[2017.01.31-21.03.26:727][971]LogSavePackage: Save=64.37ms
+[2017.01.31-21.03.26:727][971]LogSavePackage: Moving '../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Saved/level_00879ECE2146214D63FB195A997775D89C.tmp' to '../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Content/ShantaesRipoff/Maps/level_00.umap'
+[2017.01.31-21.03.26:728][971]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Content/ShantaesRipoff/Maps/level_00.umap
+[2017.01.31-21.03.28:126][118]LogSavePackage: Save=55.97ms
+[2017.01.31-21.03.28:126][118]LogSavePackage: Moving '../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Saved/BP_Dude178FF5CE42874502348F3DBD916A8ACB.tmp' to '../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Content/ShantaesRipoff/Blueprint/BP_Dude.uasset'
+[2017.01.31-21.03.28:129][118]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Content/ShantaesRipoff/Blueprint/BP_Dude.uasset
+[2017.01.31-21.03.42:976][578]LogWindows: LaunchURL http://docs.unrealengine.com/latest/INT/index.html?utm_source=editor&utm_medium=docs&utm_campaign=help_menu
+[2017.01.31-21.03.46:713][729]LogSavePackage: Save=7.94ms
+[2017.01.31-21.03.46:713][729]LogSavePackage: Moving '../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Saved/AJ_PunchC87B238D4859156176AA98A41E6BADBB.tmp' to '../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Content/ShantaesRipoff/Sprites/Character/AJ_Punch.uasset'
+[2017.01.31-21.03.46:715][729]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Content/ShantaesRipoff/Sprites/Character/AJ_Punch.uasset
+[2017.01.31-21.03.46:903][729]LogSavePackage: Save=69.24ms
+[2017.01.31-21.03.46:903][729]LogSavePackage: Moving '../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Saved/BP_DudeD14327724B572DE7B1332AA7C9F759C7.tmp' to '../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Content/ShantaesRipoff/Blueprint/BP_Dude.uasset'
+[2017.01.31-21.03.46:904][729]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Content/ShantaesRipoff/Blueprint/BP_Dude.uasset
+[2017.01.31-21.03.56:131][782]LogSavePackage: Save=53.51ms
+[2017.01.31-21.03.56:131][782]LogSavePackage: Moving '../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Saved/BP_DudeC9C8775B45D74849E79FCDB9E78981F8.tmp' to '../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Content/ShantaesRipoff/Blueprint/BP_Dude.uasset'
+[2017.01.31-21.03.56:132][782]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Content/ShantaesRipoff/Blueprint/BP_Dude.uasset
+[2017.01.31-21.04.38:081][801]LogSavePackage: Save=53.78ms
+[2017.01.31-21.04.38:081][801]LogSavePackage: Moving '../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Saved/BP_Dude769153354064067470123A9CFE12B111.tmp' to '../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Content/ShantaesRipoff/Blueprint/BP_Dude.uasset'
+[2017.01.31-21.04.38:083][801]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Content/ShantaesRipoff/Blueprint/BP_Dude.uasset
+[2017.01.31-21.04.55:627][894]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2017.01.31-21.04.55:648][894]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.01.31-21.04.55:648][894]PIE: New page: PIE session: level_00 (Jan 31, 2017, 11:04:55 AM)
+[2017.01.31-21.04.55:648][894]LogPlayLevel: Creating play world package: /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00
+[2017.01.31-21.04.55:654][894]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005865s)
+[2017.01.31-21.04.55:654][894]LogAIModule: Creating AISystem for world level_00
+[2017.01.31-21.04.55:655][894]LogPlayLevel: PIE: World Init took: (0.000839s)
+[2017.01.31-21.04.55:655][894]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ShantaesRipoff/Maps/level_00.level_00 to /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00.level_00 (0.006974s)
+[2017.01.31-21.04.55:679][894]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.01.31-21.04.55:688][894]LogInit: FAudioDevice initialized.
+[2017.01.31-21.04.55:729][894]LogLoad: Game class is '2DSideScrollerGameMode_C'
+[2017.01.31-21.04.55:733][894]LogWorld: Bringing World /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00.level_00 up for play (max tick rate 0) at 2017.01.31-16.04.55
+[2017.01.31-21.04.55:733][894]LogWorld: Bringing up level for play took: 0.002963
+[2017.01.31-21.04.55:735][894]PIE:Warning: Warning The widget 'Widget_HUD_C' was already added to the screen.
+[2017.01.31-21.04.55:739][894]PIE: Info Play in editor start time for /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00 -0.632
+[2017.01.31-21.04.58:597][177]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2017.01.31-21.04.58:616][177]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.01.31-21.04.58:616][177]PIE: New page: PIE session: level_00 (Jan 31, 2017, 11:04:58 AM)
+[2017.01.31-21.04.58:616][177]LogPlayLevel: Creating play world package: /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00
+[2017.01.31-21.04.58:622][177]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005920s)
+[2017.01.31-21.04.58:623][177]LogAIModule: Creating AISystem for world level_00
+[2017.01.31-21.04.58:623][177]LogPlayLevel: PIE: World Init took: (0.000818s)
+[2017.01.31-21.04.58:623][177]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ShantaesRipoff/Maps/level_00.level_00 to /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00.level_00 (0.006959s)
+[2017.01.31-21.04.58:648][177]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.01.31-21.04.58:656][177]LogInit: FAudioDevice initialized.
+[2017.01.31-21.04.58:699][177]LogLoad: Game class is '2DSideScrollerGameMode_C'
+[2017.01.31-21.04.58:702][177]LogWorld: Bringing World /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00.level_00 up for play (max tick rate 0) at 2017.01.31-16.04.58
+[2017.01.31-21.04.58:703][177]LogWorld: Bringing up level for play took: 0.003120
+[2017.01.31-21.04.58:704][177]PIE:Warning: Warning The widget 'Widget_HUD_C' was already added to the screen.
+[2017.01.31-21.04.58:709][177]PIE: Info Play in editor start time for /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00 0.338
+[2017.01.31-21.05.16:195][887]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2017.01.31-21.05.16:214][887]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.01.31-21.05.16:214][887]PIE: New page: PIE session: level_00 (Jan 31, 2017, 11:05:16 AM)
+[2017.01.31-21.05.16:214][887]LogPlayLevel: Creating play world package: /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00
+[2017.01.31-21.05.16:220][887]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005842s)
+[2017.01.31-21.05.16:220][887]LogAIModule: Creating AISystem for world level_00
+[2017.01.31-21.05.16:221][887]LogPlayLevel: PIE: World Init took: (0.000770s)
+[2017.01.31-21.05.16:221][887]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ShantaesRipoff/Maps/level_00.level_00 to /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00.level_00 (0.006848s)
+[2017.01.31-21.05.16:244][887]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.01.31-21.05.16:251][887]LogInit: FAudioDevice initialized.
+[2017.01.31-21.05.16:291][887]LogLoad: Game class is '2DSideScrollerGameMode_C'
+[2017.01.31-21.05.16:294][887]LogWorld: Bringing World /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00.level_00 up for play (max tick rate 0) at 2017.01.31-16.05.16
+[2017.01.31-21.05.16:295][887]LogWorld: Bringing up level for play took: 0.003352
+[2017.01.31-21.05.16:296][887]PIE:Warning: Warning The widget 'Widget_HUD_C' was already added to the screen.
+[2017.01.31-21.05.16:300][887]PIE: Info Play in editor start time for /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00 -0.07
+[2017.01.31-21.05.58:643][670]LogEditorTransaction: Undo Delete current selection
+[2017.01.31-21.06.02:435][114]BlueprintLog: New page: Compile BP_Ugmo
+[2017.01.31-21.06.03:145][185]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2017.01.31-21.06.03:164][185]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.01.31-21.06.03:164][185]PIE: New page: PIE session: level_00 (Jan 31, 2017, 11:06:03 AM)
+[2017.01.31-21.06.03:164][185]LogPlayLevel: Creating play world package: /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00
+[2017.01.31-21.06.03:170][185]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005791s)
+[2017.01.31-21.06.03:170][185]LogAIModule: Creating AISystem for world level_00
+[2017.01.31-21.06.03:171][185]LogPlayLevel: PIE: World Init took: (0.000700s)
+[2017.01.31-21.06.03:171][185]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ShantaesRipoff/Maps/level_00.level_00 to /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00.level_00 (0.006707s)
+[2017.01.31-21.06.03:195][185]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.01.31-21.06.03:202][185]LogInit: FAudioDevice initialized.
+[2017.01.31-21.06.03:246][185]LogLoad: Game class is '2DSideScrollerGameMode_C'
+[2017.01.31-21.06.03:250][185]LogWorld: Bringing World /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00.level_00 up for play (max tick rate 0) at 2017.01.31-16.06.03
+[2017.01.31-21.06.03:250][185]LogWorld: Bringing up level for play took: 0.002992
+[2017.01.31-21.06.03:252][185]PIE:Warning: Warning The widget 'Widget_HUD_C' was already added to the screen.
+[2017.01.31-21.06.03:255][185]PIE: Info Play in editor start time for /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00 0.885
+[2017.01.31-21.06.23:471][467]BlueprintLog: New page: Compile BP_Ugmo
+[2017.01.31-21.06.24:348][557]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2017.01.31-21.06.24:366][557]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.01.31-21.06.24:367][557]PIE: New page: PIE session: level_00 (Jan 31, 2017, 11:06:24 AM)
+[2017.01.31-21.06.24:367][557]LogPlayLevel: Creating play world package: /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00
+[2017.01.31-21.06.24:372][557]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005768s)
+[2017.01.31-21.06.24:373][557]LogAIModule: Creating AISystem for world level_00
+[2017.01.31-21.06.24:373][557]LogPlayLevel: PIE: World Init took: (0.000626s)
+[2017.01.31-21.06.24:373][557]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ShantaesRipoff/Maps/level_00.level_00 to /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00.level_00 (0.006649s)
+[2017.01.31-21.06.24:396][557]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.01.31-21.06.24:404][557]LogInit: FAudioDevice initialized.
+[2017.01.31-21.06.24:448][557]LogLoad: Game class is '2DSideScrollerGameMode_C'
+[2017.01.31-21.06.24:452][557]LogWorld: Bringing World /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00.level_00 up for play (max tick rate 0) at 2017.01.31-16.06.24
+[2017.01.31-21.06.24:453][557]LogWorld: Bringing up level for play took: 0.003319
+[2017.01.31-21.06.24:454][557]PIE:Warning: Warning The widget 'Widget_HUD_C' was already added to the screen.
+[2017.01.31-21.06.24:459][557]PIE: Info Play in editor start time for /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00 0.088
+[2017.01.31-21.08.02:314][807]BlueprintLog: New page: Compile BP_Ugmo
+[2017.01.31-21.08.03:441][928]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2017.01.31-21.08.03:460][928]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.01.31-21.08.03:460][928]PIE: New page: PIE session: level_00 (Jan 31, 2017, 11:08:03 AM)
+[2017.01.31-21.08.03:460][928]LogPlayLevel: Creating play world package: /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00
+[2017.01.31-21.08.03:466][928]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005949s)
+[2017.01.31-21.08.03:467][928]LogAIModule: Creating AISystem for world level_00
+[2017.01.31-21.08.03:467][928]LogPlayLevel: PIE: World Init took: (0.000903s)
+[2017.01.31-21.08.03:467][928]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ShantaesRipoff/Maps/level_00.level_00 to /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00.level_00 (0.007072s)
+[2017.01.31-21.08.03:491][928]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.01.31-21.08.03:500][928]LogInit: FAudioDevice initialized.
+[2017.01.31-21.08.03:541][928]LogLoad: Game class is '2DSideScrollerGameMode_C'
+[2017.01.31-21.08.03:545][928]LogWorld: Bringing World /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00.level_00 up for play (max tick rate 0) at 2017.01.31-16.08.03
+[2017.01.31-21.08.03:545][928]LogWorld: Bringing up level for play took: 0.003142
+[2017.01.31-21.08.03:547][928]PIE:Warning: Warning The widget 'Widget_HUD_C' was already added to the screen.
+[2017.01.31-21.08.03:551][928]PIE: Info Play in editor start time for /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00 -0.82
+[2017.01.31-21.08.10:489][560]LogSavePackage: Save=50.15ms
+[2017.01.31-21.08.10:489][560]LogSavePackage: Moving '../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Saved/BP_Ugmo03A753114EF311813D539FB7DE66B4FC.tmp' to '../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Content/ShantaesRipoff/Blueprint/BP_Ugmo.uasset'
+[2017.01.31-21.08.10:492][560]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Content/ShantaesRipoff/Blueprint/BP_Ugmo.uasset
+[2017.01.31-21.09.17:942][607]BlueprintLog: New page: Compile BP_Ugmo
+[2017.01.31-21.09.19:993][832]LogSavePackage: Save=39.07ms
+[2017.01.31-21.09.19:993][832]LogSavePackage: Moving '../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Saved/BP_UgmoD84AA8D841C96DAF6F832A98A0A23EE5.tmp' to '../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Content/ShantaesRipoff/Blueprint/BP_Ugmo.uasset'
+[2017.01.31-21.09.19:995][832]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Content/ShantaesRipoff/Blueprint/BP_Ugmo.uasset
+[2017.01.31-21.09.21:120][965]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2017.01.31-21.09.21:139][965]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.01.31-21.09.21:139][965]PIE: New page: PIE session: level_00 (Jan 31, 2017, 11:09:21 AM)
+[2017.01.31-21.09.21:140][965]LogPlayLevel: Creating play world package: /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00
+[2017.01.31-21.09.21:146][965]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005897s)
+[2017.01.31-21.09.21:146][965]LogAIModule: Creating AISystem for world level_00
+[2017.01.31-21.09.21:146][965]LogPlayLevel: PIE: World Init took: (0.000667s)
+[2017.01.31-21.09.21:146][965]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ShantaesRipoff/Maps/level_00.level_00 to /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00.level_00 (0.006831s)
+[2017.01.31-21.09.21:170][965]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.01.31-21.09.21:178][965]LogInit: FAudioDevice initialized.
+[2017.01.31-21.09.21:225][965]LogLoad: Game class is '2DSideScrollerGameMode_C'
+[2017.01.31-21.09.21:232][965]LogWorld: Bringing World /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00.level_00 up for play (max tick rate 0) at 2017.01.31-16.09.21
+[2017.01.31-21.09.21:233][965]LogWorld: Bringing up level for play took: 0.006180
+[2017.01.31-21.09.21:236][965]PIE:Warning: Warning The widget 'Widget_HUD_C' was already added to the screen.
+[2017.01.31-21.09.21:243][965]PIE: Info Play in editor start time for /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00 0.873
+[2017.01.31-21.09.30:495][916]BlueprintLog: New page: Compile BP_Ugmo
+[2017.01.31-21.09.31:227][990]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2017.01.31-21.09.31:246][990]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.01.31-21.09.31:247][990]PIE: New page: PIE session: level_00 (Jan 31, 2017, 11:09:31 AM)
+[2017.01.31-21.09.31:247][990]LogPlayLevel: Creating play world package: /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00
+[2017.01.31-21.09.31:252][990]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005640s)
+[2017.01.31-21.09.31:253][990]LogAIModule: Creating AISystem for world level_00
+[2017.01.31-21.09.31:253][990]LogPlayLevel: PIE: World Init took: (0.000641s)
+[2017.01.31-21.09.31:253][990]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ShantaesRipoff/Maps/level_00.level_00 to /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00.level_00 (0.006565s)
+[2017.01.31-21.09.31:277][990]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.01.31-21.09.31:284][990]LogInit: FAudioDevice initialized.
+[2017.01.31-21.09.31:323][990]LogLoad: Game class is '2DSideScrollerGameMode_C'
+[2017.01.31-21.09.31:327][990]LogWorld: Bringing World /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00.level_00 up for play (max tick rate 0) at 2017.01.31-16.09.31
+[2017.01.31-21.09.31:327][990]LogWorld: Bringing up level for play took: 0.003138
+[2017.01.31-21.09.31:329][990]PIE:Warning: Warning The widget 'Widget_HUD_C' was already added to the screen.
+[2017.01.31-21.09.31:332][990]PIE: Info Play in editor start time for /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00 0.962
+[2017.01.31-21.09.46:522][659]BlueprintLog: New page: Compile BP_Ugmo
+[2017.01.31-21.09.47:945][815]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2017.01.31-21.09.47:964][815]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.01.31-21.09.47:964][815]PIE: New page: PIE session: level_00 (Jan 31, 2017, 11:09:47 AM)
+[2017.01.31-21.09.47:964][815]LogPlayLevel: Creating play world package: /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00
+[2017.01.31-21.09.47:970][815]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005844s)
+[2017.01.31-21.09.47:971][815]LogAIModule: Creating AISystem for world level_00
+[2017.01.31-21.09.47:971][815]LogPlayLevel: PIE: World Init took: (0.000640s)
+[2017.01.31-21.09.47:971][815]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ShantaesRipoff/Maps/level_00.level_00 to /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00.level_00 (0.006706s)
+[2017.01.31-21.09.47:995][815]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.01.31-21.09.48:003][815]LogInit: FAudioDevice initialized.
+[2017.01.31-21.09.48:052][815]LogLoad: Game class is '2DSideScrollerGameMode_C'
+[2017.01.31-21.09.48:061][815]LogWorld: Bringing World /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00.level_00 up for play (max tick rate 0) at 2017.01.31-16.09.48
+[2017.01.31-21.09.48:062][815]LogWorld: Bringing up level for play took: 0.007077
+[2017.01.31-21.09.48:065][815]PIE:Warning: Warning The widget 'Widget_HUD_C' was already added to the screen.
+[2017.01.31-21.09.48:072][815]PIE: Info Play in editor start time for /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00 -0.298
+[2017.01.31-21.10.03:879][531]BlueprintLog: New page: Compile BP_Ugmo
+[2017.01.31-21.10.04:712][617]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2017.01.31-21.10.04:731][617]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.01.31-21.10.04:731][617]PIE: New page: PIE session: level_00 (Jan 31, 2017, 11:10:04 AM)
+[2017.01.31-21.10.04:731][617]LogPlayLevel: Creating play world package: /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00
+[2017.01.31-21.10.04:737][617]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005639s)
+[2017.01.31-21.10.04:737][617]LogAIModule: Creating AISystem for world level_00
+[2017.01.31-21.10.04:737][617]LogPlayLevel: PIE: World Init took: (0.000716s)
+[2017.01.31-21.10.04:738][617]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ShantaesRipoff/Maps/level_00.level_00 to /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00.level_00 (0.006641s)
+[2017.01.31-21.10.04:761][617]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.01.31-21.10.04:768][617]LogInit: FAudioDevice initialized.
+[2017.01.31-21.10.04:808][617]LogLoad: Game class is '2DSideScrollerGameMode_C'
+[2017.01.31-21.10.04:812][617]LogWorld: Bringing World /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00.level_00 up for play (max tick rate 0) at 2017.01.31-16.10.04
+[2017.01.31-21.10.04:812][617]LogWorld: Bringing up level for play took: 0.003298
+[2017.01.31-21.10.04:814][617]PIE:Warning: Warning The widget 'Widget_HUD_C' was already added to the screen.
+[2017.01.31-21.10.04:818][617]PIE: Info Play in editor start time for /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00 0.447
+[2017.01.31-21.10.16:562][854]LogSavePackage: Save=66.76ms
+[2017.01.31-21.10.16:562][854]LogSavePackage: Moving '../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Saved/level_00005A4D7E42149C69796FFD86DB30E005.tmp' to '../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Content/ShantaesRipoff/Maps/level_00.umap'
+[2017.01.31-21.10.16:564][854]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Content/ShantaesRipoff/Maps/level_00.umap
+[2017.01.31-21.10.21:268][362]LogEditorViewport: Clicking on Actor (LMB): PointLight (PointLight)
+[2017.01.31-21.10.23:892][637]LogEditorViewport: Clicking on Actor (LMB): BirdSeed_C (BirdSeed)
+[2017.01.31-21.10.28:480][154]LogSavePackage: Save=38.43ms
+[2017.01.31-21.10.28:480][154]LogSavePackage: Moving '../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Saved/BP_Ugmo4C16D2724ACA974476EFDB9B394DE94A.tmp' to '../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Content/ShantaesRipoff/Blueprint/BP_Ugmo.uasset'
+[2017.01.31-21.10.28:482][154]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Content/ShantaesRipoff/Blueprint/BP_Ugmo.uasset
+[2017.01.31-21.13.01:537][322]LogEditorViewport: Clicking on Actor (context menu): StaticMeshActor (M_Street2)
+[2017.01.31-21.13.03:974][564]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (M_Sidewalk_L3)
+[2017.01.31-21.13.04:366][605]LogEditorViewport: Clicking on Actor (context menu): StaticMeshActor (M_Sidewalk_L4)
+[2017.01.31-21.13.04:425][605]LogEditorViewport: Clicking on Actor (context menu): StaticMeshActor (M_Sidewalk_L4)
+[2017.01.31-21.13.04:867][651]LogEditorViewport: Clicking on Actor (context menu): StaticMeshActor (M_Sidewalk_L3)
+[2017.01.31-21.13.05:783][751]LogEditorViewport: Clicking on Actor (context menu): StaticMeshActor (M_Sidewalk_L4)
+[2017.01.31-21.13.06:423][816]LogEditorViewport: Clicking Background
+[2017.01.31-21.13.38:483][434]LogSavePackage: Save=14.69ms
+[2017.01.31-21.13.38:483][434]LogSavePackage: Moving '../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Saved/AI_Character912075D94A88F9ED8B8E79A8D3BC129C.tmp' to '../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Content/ShantaesRipoff/Blueprint/AI_Character.uasset'
+[2017.01.31-21.13.38:484][434]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Content/ShantaesRipoff/Blueprint/AI_Character.uasset
+[2017.01.31-21.13.45:001][128]Cmd: DELETE
+[2017.01.31-21.13.45:001][128]Cmd: ACTOR DELETE
+[2017.01.31-21.13.45:003][128]LogEditorActor: Deleted Actor: AI_Character_C
+[2017.01.31-21.13.45:050][128]LogEditorActor: Deleted 1 Actors (0.049 secs)
+[2017.01.31-21.14.06:916][870]LogSavePackage: Save=4.24ms
+[2017.01.31-21.14.06:916][870]LogSavePackage: Moving '../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Saved/FollowerBT260CF89B43A3CD89269A2C9F25EE4C20.tmp' to '../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Content/ShantaesRipoff/Blueprint/FollowerBT.uasset'
+[2017.01.31-21.14.06:918][870]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Content/ShantaesRipoff/Blueprint/FollowerBT.uasset
+[2017.01.31-21.14.21:732][ 89]LogSavePackage: Save=4.25ms
+[2017.01.31-21.14.21:732][ 89]LogSavePackage: Moving '../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Saved/FollowerBlackBoardBBE3306F499568BD65A6FA891061F1D1.tmp' to '../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Content/ShantaesRipoff/Blueprint/FollowerBlackBoard.uasset'
+[2017.01.31-21.14.21:734][ 89]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Content/ShantaesRipoff/Blueprint/FollowerBlackBoard.uasset
+[2017.01.31-21.14.34:545][764]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (M_Sidewalk_L9)
+[2017.01.31-21.14.35:449][861]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (M_Sidewalk_L)
+[2017.01.31-21.14.36:415][948]LogSavePackage: Save=64.05ms
+[2017.01.31-21.14.36:415][948]LogSavePackage: Moving '../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Saved/level_00B8C726CF49028CE4583F67B3F9E64767.tmp' to '../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Content/ShantaesRipoff/Maps/level_00.umap'
+[2017.01.31-21.14.36:418][948]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Content/ShantaesRipoff/Maps/level_00.umap
+[2017.01.31-21.15.12:576][484]LogSavePackage: Save=54.13ms
+[2017.01.31-21.15.12:577][484]LogSavePackage: Moving '../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Saved/BP_Dude0CF5B9834F0DA7EA99D391BE3ABE2EDF.tmp' to '../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Content/ShantaesRipoff/Blueprint/BP_Dude.uasset'
+[2017.01.31-21.15.12:579][484]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Content/ShantaesRipoff/Blueprint/BP_Dude.uasset
+[2017.01.31-21.15.13:600][605]BlueprintLog: New page: Compile BP_Dude
+[2017.01.31-21.15.14:395][664]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2017.01.31-21.15.14:418][664]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.01.31-21.15.14:418][664]PIE: New page: PIE session: level_00 (Jan 31, 2017, 11:15:14 AM)
+[2017.01.31-21.15.14:418][664]LogPlayLevel: Creating play world package: /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00
+[2017.01.31-21.15.14:423][664]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005678s)
+[2017.01.31-21.15.14:424][664]LogAIModule: Creating AISystem for world level_00
+[2017.01.31-21.15.14:424][664]LogPlayLevel: PIE: World Init took: (0.000775s)
+[2017.01.31-21.15.14:424][664]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ShantaesRipoff/Maps/level_00.level_00 to /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00.level_00 (0.006663s)
+[2017.01.31-21.15.14:456][664]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.01.31-21.15.14:463][664]LogInit: FAudioDevice initialized.
+[2017.01.31-21.15.14:507][664]LogLoad: Game class is '2DSideScrollerGameMode_C'
+[2017.01.31-21.15.14:510][664]LogWorld: Bringing World /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00.level_00 up for play (max tick rate 0) at 2017.01.31-16.15.14
+[2017.01.31-21.15.14:510][664]LogWorld: Bringing up level for play took: 0.002834
+[2017.01.31-21.15.14:512][664]PIE:Warning: Warning The widget 'Widget_HUD_C' was already added to the screen.
+[2017.01.31-21.15.14:518][664]PIE: Info Play in editor start time for /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00 0.148
+[2017.01.31-21.16.33:443][192]BlueprintLog: New page: Compile BP_Dude
+[2017.01.31-21.16.34:213][247]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2017.01.31-21.16.34:232][247]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.01.31-21.16.34:233][247]PIE: New page: PIE session: level_00 (Jan 31, 2017, 11:16:34 AM)
+[2017.01.31-21.16.34:233][247]LogPlayLevel: Creating play world package: /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00
+[2017.01.31-21.16.34:239][247]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006003s)
+[2017.01.31-21.16.34:239][247]LogAIModule: Creating AISystem for world level_00
+[2017.01.31-21.16.34:239][247]LogPlayLevel: PIE: World Init took: (0.000650s)
+[2017.01.31-21.16.34:239][247]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ShantaesRipoff/Maps/level_00.level_00 to /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00.level_00 (0.006871s)
+[2017.01.31-21.16.34:264][247]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.01.31-21.16.34:272][247]LogInit: FAudioDevice initialized.
+[2017.01.31-21.16.34:319][247]LogLoad: Game class is '2DSideScrollerGameMode_C'
+[2017.01.31-21.16.34:323][247]LogWorld: Bringing World /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00.level_00 up for play (max tick rate 0) at 2017.01.31-16.16.34
+[2017.01.31-21.16.34:324][247]LogWorld: Bringing up level for play took: 0.003446
+[2017.01.31-21.16.34:325][247]PIE:Warning: Warning The widget 'Widget_HUD_C' was already added to the screen.
+[2017.01.31-21.16.34:331][247]PIE: Info Play in editor start time for /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00 -0.039
+[2017.01.31-21.16.46:432][402]LogSavePackage: Save=52.72ms
+[2017.01.31-21.16.46:432][402]LogSavePackage: Moving '../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Saved/BP_Dude15E10F7D495169F9E59476A96ACAB6A5.tmp' to '../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Content/ShantaesRipoff/Blueprint/BP_Dude.uasset'
+[2017.01.31-21.16.46:434][402]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Content/ShantaesRipoff/Blueprint/BP_Dude.uasset
+[2017.01.31-21.17.17:638][ 90]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2017.01.31-21.17.28:132][330]LogEditorTransaction: Undo Delete current selection
+[2017.01.31-21.17.51:005][ 23]BlueprintLog: New page: Compile BP_Ugmo
+[2017.01.31-21.17.51:108][ 23]BlueprintLog: New page: Compile BP_Ugmo
+[2017.01.31-21.18.01:035][173]LogSavePackage: Save=36.98ms
+[2017.01.31-21.18.01:035][173]LogSavePackage: Moving '../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Saved/BP_Ugmo834BE6FE4470946677C481ADA2FBD386.tmp' to '../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Content/ShantaesRipoff/Blueprint/BP_Ugmo.uasset'
+[2017.01.31-21.18.01:038][173]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Content/ShantaesRipoff/Blueprint/BP_Ugmo.uasset
+[2017.01.31-21.18.02:611][359]BlueprintLog: New page: Compile BP_Ugmo
+[2017.01.31-21.18.03:453][445]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2017.01.31-21.18.03:474][445]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.01.31-21.18.03:474][445]PIE: New page: PIE session: level_00 (Jan 31, 2017, 11:18:03 AM)
+[2017.01.31-21.18.03:474][445]LogPlayLevel: Creating play world package: /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00
+[2017.01.31-21.18.03:480][445]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005898s)
+[2017.01.31-21.18.03:481][445]LogAIModule: Creating AISystem for world level_00
+[2017.01.31-21.18.03:481][445]LogPlayLevel: PIE: World Init took: (0.000767s)
+[2017.01.31-21.18.03:481][445]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ShantaesRipoff/Maps/level_00.level_00 to /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00.level_00 (0.006885s)
+[2017.01.31-21.18.03:504][445]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.01.31-21.18.03:512][445]LogInit: FAudioDevice initialized.
+[2017.01.31-21.18.03:557][445]LogLoad: Game class is '2DSideScrollerGameMode_C'
+[2017.01.31-21.18.03:560][445]LogWorld: Bringing World /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00.level_00 up for play (max tick rate 0) at 2017.01.31-16.18.03
+[2017.01.31-21.18.03:561][445]LogWorld: Bringing up level for play took: 0.003104
+[2017.01.31-21.18.03:562][445]PIE:Warning: Warning The widget 'Widget_HUD_C' was already added to the screen.
+[2017.01.31-21.18.03:566][445]PIE: Info Play in editor start time for /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00 -0.804
+[2017.01.31-21.19.11:200][  7]BlueprintLog: New page: Compile BP_Ugmo
+[2017.01.31-21.19.13:641][280]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2017.01.31-21.19.13:659][280]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.01.31-21.19.13:659][280]PIE: New page: PIE session: level_00 (Jan 31, 2017, 11:19:13 AM)
+[2017.01.31-21.19.13:659][280]LogPlayLevel: Creating play world package: /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00
+[2017.01.31-21.19.13:665][280]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006030s)
+[2017.01.31-21.19.13:666][280]LogAIModule: Creating AISystem for world level_00
+[2017.01.31-21.19.13:666][280]LogPlayLevel: PIE: World Init took: (0.000987s)
+[2017.01.31-21.19.13:666][280]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ShantaesRipoff/Maps/level_00.level_00 to /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00.level_00 (0.007319s)
+[2017.01.31-21.19.13:689][280]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.01.31-21.19.13:697][280]LogInit: FAudioDevice initialized.
+[2017.01.31-21.19.13:738][280]LogLoad: Game class is '2DSideScrollerGameMode_C'
+[2017.01.31-21.19.13:741][280]LogWorld: Bringing World /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00.level_00 up for play (max tick rate 0) at 2017.01.31-16.19.13
+[2017.01.31-21.19.13:742][280]LogWorld: Bringing up level for play took: 0.003033
+[2017.01.31-21.19.13:743][280]PIE:Warning: Warning The widget 'Widget_HUD_C' was already added to the screen.
+[2017.01.31-21.19.13:747][280]PIE: Info Play in editor start time for /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00 -0.624
+[2017.01.31-21.19.22:642][142]LogSavePackage: Save=36.77ms
+[2017.01.31-21.19.22:642][142]LogSavePackage: Moving '../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Saved/BP_UgmoDE2A3AC840321F4C6A496BAC6D2DEEF7.tmp' to '../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Content/ShantaesRipoff/Blueprint/BP_Ugmo.uasset'
+[2017.01.31-21.19.22:645][142]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Content/ShantaesRipoff/Blueprint/BP_Ugmo.uasset
+[2017.01.31-21.19.34:148][495]BlueprintLog: New page: Compile BP_Ugmo
+[2017.01.31-21.19.35:698][666]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2017.01.31-21.19.35:715][666]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.01.31-21.19.35:715][666]PIE: New page: PIE session: level_00 (Jan 31, 2017, 11:19:35 AM)
+[2017.01.31-21.19.35:715][666]LogPlayLevel: Creating play world package: /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00
+[2017.01.31-21.19.35:721][666]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005567s)
+[2017.01.31-21.19.35:721][666]LogAIModule: Creating AISystem for world level_00
+[2017.01.31-21.19.35:721][666]LogPlayLevel: PIE: World Init took: (0.000539s)
+[2017.01.31-21.19.35:721][666]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ShantaesRipoff/Maps/level_00.level_00 to /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00.level_00 (0.006319s)
+[2017.01.31-21.19.35:744][666]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.01.31-21.19.35:752][666]LogInit: FAudioDevice initialized.
+[2017.01.31-21.19.35:792][666]LogLoad: Game class is '2DSideScrollerGameMode_C'
+[2017.01.31-21.19.35:796][666]LogWorld: Bringing World /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00.level_00 up for play (max tick rate 0) at 2017.01.31-16.19.35
+[2017.01.31-21.19.35:796][666]LogWorld: Bringing up level for play took: 0.003095
+[2017.01.31-21.19.35:797][666]PIE:Warning: Warning The widget 'Widget_HUD_C' was already added to the screen.
+[2017.01.31-21.19.35:802][666]PIE: Info Play in editor start time for /Game/ShantaesRipoff/Maps/UEDPIE_0_level_00 -0.568
+[2017.01.31-21.21.54:861][900]LogSavePackage: Save=41.43ms
+[2017.01.31-21.21.54:861][900]LogSavePackage: Moving '../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Saved/BP_Ugmo67FF0EBE42BCA2833F26E889A2B5BE5A.tmp' to '../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Content/ShantaesRipoff/Blueprint/BP_Ugmo.uasset'
+[2017.01.31-21.21.54:863][900]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Content/ShantaesRipoff/Blueprint/BP_Ugmo.uasset
+[2017.01.31-21.22.56:411][633]LogSavePackage: Save=62.42ms
+[2017.01.31-21.22.56:411][633]LogSavePackage: Moving '../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Saved/level_002ABBF916429EE957DBAD689F396F5C1C.tmp' to '../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Content/ShantaesRipoff/Maps/level_00.umap'
+[2017.01.31-21.22.56:429][633]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Content/ShantaesRipoff/Maps/level_00.umap
+[2017.01.31-21.29.04:382][160]LogFactory: FactoryCreateFile: SoundWave with ReimportSoundFactory (0 0 ../../../../../../Users/Tak/Music/Phone Rotation/Text Notifications/REEE.wav)
+[2017.01.31-21.29.04:458][160]Error: Unable to read wave file 'REEE' - "Unsupported wave file format.  Only PCM, ADPCM, and DVI ADPCM can be imported."
+[2017.01.31-21.29.12:907][160]LogAssetTools:Warning: Failed to import '../../../../../../Users/Tak/Music/Phone Rotation/Text Notifications/REEE.wav'. Failed to create asset '/Game/ShantaesRipoff/Audio/EnemyAudioAssets/Ugmo/REEE'.
+Please see Output Log for details.
+[2017.01.31-21.29.47:676][293]LogFactory: FactoryCreateFile: SoundWave with ReimportSoundFactory (0 0 ../../../../../../Users/Tak/Music/Phone Rotation/Text Notifications/REEE.wav)
+[2017.01.31-21.29.47:676][293]Error: Unable to read wave file 'REEE' - "Unsupported wave file format.  Only PCM, ADPCM, and DVI ADPCM can be imported."
+[2017.01.31-21.29.53:402][293]LogAssetTools:Warning: Failed to import '../../../../../../Users/Tak/Music/Phone Rotation/Text Notifications/REEE.wav'. Failed to create asset '/Game/ShantaesRipoff/Audio/EnemyAudioAssets/Ugmo/REEE'.
+Please see Output Log for details.
+[2017.01.31-21.30.21:271][362]LogSavePackage: Save=78.64ms
+[2017.01.31-21.30.21:271][362]LogSavePackage: Moving '../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Saved/level_005B2B744942BC61D1EF18CA8E7B140885.tmp' to '../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Content/ShantaesRipoff/Maps/level_00.umap'
+[2017.01.31-21.30.21:273][362]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Content/ShantaesRipoff/Maps/level_00.umap
+[2017.01.31-21.30.31:909][442]LogSavePackage: Save=113.67ms
+[2017.01.31-21.30.31:909][442]LogSavePackage: Moving '../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Saved/level_00D64FD28D4812603BB6CD328C0CDBA9F1.tmp' to '../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Content/ShantaesRipoff/Maps/level_00.umap'
+[2017.01.31-21.30.31:913][442]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Content/ShantaesRipoff/Maps/level_00.umap
+[2017.01.31-21.30.32:513][493]LogSavePackage: Save=63.32ms
+[2017.01.31-21.30.32:513][493]LogSavePackage: Moving '../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Saved/level_0050128D5A43DDC535AFB7DD9AAF960EE5.tmp' to '../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Content/ShantaesRipoff/Maps/level_00.umap'
+[2017.01.31-21.30.32:514][493]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Content/ShantaesRipoff/Maps/level_00.umap
+[2017.01.31-21.30.36:043][591]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2017.01.31-21.30.36:323][592]Cmd: QUIT_EDITOR
+[2017.01.31-21.30.36:565][592]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.01.31-21.30.36:632][592]LogExit: Preparing to exit.
+[2017.01.31-21.30.37:427][592]LogDirectoryWatcher: A directory notification for 'C:/Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Content/' was aborted.
+[2017.01.31-21.30.37:529][592]LogExit: Editor shut down
+[2017.01.31-21.30.37:530][592]LogExit: Transaction tracking system shut down
+[2017.01.31-21.30.37:679][592]LogObj: Freed 0b from 0 cluster array pools.
+[2017.01.31-21.30.37:680][592]LogExit: Object subsystem successfully closed.
+[2017.01.31-21.30.37:701][592]LogD3D11RHI: Shutdown
+[2017.01.31-21.30.37:701][592]LogD3D11RHI: CleanupD3DDevice
+[2017.01.31-21.30.37:820][592]LogD3D11RHI: ~FD3D11DynamicRHI
+[2017.01.31-21.30.37:833][592]LogHttp:Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
+[2017.01.31-21.30.37:833][592]LogHttp:Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B97BAE212-44CC-DB09-205A-15A8A43096AE%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.14.3-3249277%2B%2B%2BUE4%2BRelease-4.14&UserID=432ba7df4ad6bae0ec2354b7fc35a1e0%7C4a54d2d7bb754e88b4669d72009f5046%7C097e5d8a-9fc2-49b4-984a-3ac3ca64eac4&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
+[2017.01.31-21.30.37:850][592]LogModuleManager: Shutting down and abandoning module BlueprintGraph (246)
+[2017.01.31-21.30.37:850][592]LogModuleManager: Shutting down and abandoning module BlueprintProfiler (245)
+[2017.01.31-21.30.37:850][592]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (244)
+[2017.01.31-21.30.37:850][592]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (243)
+[2017.01.31-21.30.37:850][592]LogModuleManager: Shutting down and abandoning module CrashTracker (242)
+[2017.01.31-21.30.37:850][592]LogModuleManager: Shutting down and abandoning module SceneOutliner (241)
+[2017.01.31-21.30.37:850][592]LogModuleManager: Shutting down and abandoning module WidgetCarousel (240)
+[2017.01.31-21.30.37:850][592]LogModuleManager: Shutting down and abandoning module AddContentDialog (239)
+[2017.01.31-21.30.37:850][592]LogDirectoryWatcher: A directory notification for 'C:/Program Files (x86)/Epic Games/4.14/FeaturePacks/' was aborted.
+[2017.01.31-21.30.37:855][592]LogModuleManager: Shutting down and abandoning module GameplayTags (238)
+[2017.01.31-21.30.37:855][592]LogModuleManager: Shutting down and abandoning module EditorWidgets (237)
+[2017.01.31-21.30.37:855][592]LogModuleManager: Shutting down and abandoning module CollectionManager (236)
+[2017.01.31-21.30.37:856][592]LogDirectoryWatcher: A directory notification for 'C:/Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Content/Collections/' was aborted.
+[2017.01.31-21.30.37:856][592]LogDirectoryWatcher: A directory notification for 'C:/Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Content/Developers/Tak/Collections/' was aborted.
+[2017.01.31-21.30.37:856][592]LogDirectoryWatcher: A directory notification for 'C:/Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Saved/Collections/' was aborted.
+[2017.01.31-21.30.37:856][592]LogModuleManager: Shutting down and abandoning module StatsViewer (235)
+[2017.01.31-21.30.37:856][592]LogModuleManager: Shutting down and abandoning module FoliageEdit (234)
+[2017.01.31-21.30.37:856][592]LogModuleManager: Shutting down and abandoning module LandscapeEditor (233)
+[2017.01.31-21.30.37:856][592]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (232)
+[2017.01.31-21.30.37:856][592]LogModuleManager: Shutting down and abandoning module ActorPickerMode (231)
+[2017.01.31-21.30.37:856][592]LogModuleManager: Shutting down and abandoning module GeometryMode (230)
+[2017.01.31-21.30.37:856][592]LogModuleManager: Shutting down and abandoning module TextureAlignMode (229)
+[2017.01.31-21.30.37:856][592]LogModuleManager: Shutting down and abandoning module BspMode (228)
+[2017.01.31-21.30.37:856][592]LogModuleManager: Shutting down and abandoning module HardwareSurvey (227)
+[2017.01.31-21.30.37:856][592]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (226)
+[2017.01.31-21.30.37:856][592]LogModuleManager: Shutting down and abandoning module AutomationWorker (225)
+[2017.01.31-21.30.37:856][592]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (224)
+[2017.01.31-21.30.37:856][592]LogModuleManager: Shutting down and abandoning module PlacementMode (223)
+[2017.01.31-21.30.37:856][592]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (222)
+[2017.01.31-21.30.37:856][592]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (221)
+[2017.01.31-21.30.37:856][592]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (220)
+[2017.01.31-21.30.37:856][592]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (219)
+[2017.01.31-21.30.37:856][592]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (218)
+[2017.01.31-21.30.37:856][592]LogModuleManager: Shutting down and abandoning module Media (217)
+[2017.01.31-21.30.37:856][592]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (216)
+[2017.01.31-21.30.37:856][592]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (215)
+[2017.01.31-21.30.37:856][592]LogModuleManager: Shutting down and abandoning module CharacterAI (214)
+[2017.01.31-21.30.37:856][592]LogModuleManager: Shutting down and abandoning module SequenceRecorder (213)
+[2017.01.31-21.30.37:856][592]LogModuleManager: Shutting down and abandoning module AudioCapture (212)
+[2017.01.31-21.30.37:856][592]LogModuleManager: Shutting down and abandoning module SmartSnapping (211)
+[2017.01.31-21.30.37:856][592]LogModuleManager: Shutting down and abandoning module SessionServices (210)
+[2017.01.31-21.30.37:856][592]LogModuleManager: Shutting down and abandoning module ViewportSnapping (209)
+[2017.01.31-21.30.37:856][592]LogModuleManager: Shutting down and abandoning module ViewportInteraction (208)
+[2017.01.31-21.30.37:856][592]LogModuleManager: Shutting down and abandoning module LogVisualizer (207)
+[2017.01.31-21.30.37:856][592]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (206)
+[2017.01.31-21.30.37:856][592]LogModuleManager: Shutting down and abandoning module IntroTutorials (205)
+[2017.01.31-21.30.37:856][592]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (204)
+[2017.01.31-21.30.37:856][592]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (203)
+[2017.01.31-21.30.37:856][592]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (202)
+[2017.01.31-21.30.37:856][592]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (201)
+[2017.01.31-21.30.38:199][592]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (200)
+[2017.01.31-21.30.38:199][592]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (199)
+[2017.01.31-21.30.38:199][592]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (198)
+[2017.01.31-21.30.38:199][592]LogModuleManager: Shutting down and abandoning module InputBindingEditor (197)
+[2017.01.31-21.30.38:199][592]LogModuleManager: Shutting down and abandoning module NiagaraEditor (196)
+[2017.01.31-21.30.38:199][592]LogModuleManager: Shutting down and abandoning module MergeActors (195)
+[2017.01.31-21.30.38:199][592]LogModuleManager: Shutting down and abandoning module SizeMap (194)
+[2017.01.31-21.30.38:199][592]LogModuleManager: Shutting down and abandoning module TreeMap (193)
+[2017.01.31-21.30.38:199][592]LogModuleManager: Shutting down and abandoning module ReferenceViewer (192)
+[2017.01.31-21.30.38:199][592]LogModuleManager: Shutting down and abandoning module LocalizationService (191)
+[2017.01.31-21.30.38:199][592]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (190)
+[2017.01.31-21.30.38:199][592]LogModuleManager: Shutting down and abandoning module HardwareTargeting (189)
+[2017.01.31-21.30.38:200][592]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (188)
+[2017.01.31-21.30.38:200][592]LogModuleManager: Shutting down and abandoning module UndoHistory (187)
+[2017.01.31-21.30.38:200][592]LogModuleManager: Shutting down and abandoning module UserFeedback (186)
+[2017.01.31-21.30.38:200][592]LogModuleManager: Shutting down and abandoning module XmlParser (185)
+[2017.01.31-21.30.38:200][592]LogModuleManager: Shutting down and abandoning module Blutility (184)
+[2017.01.31-21.30.38:200][592]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (183)
+[2017.01.31-21.30.38:201][592]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (182)
+[2017.01.31-21.30.38:201][592]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (181)
+[2017.01.31-21.30.38:201][592]LogModuleManager: Shutting down and abandoning module SettingsEditor (180)
+[2017.01.31-21.30.38:202][592]LogModuleManager: Shutting down and abandoning module ProjectLauncher (179)
+[2017.01.31-21.30.38:202][592]LogModuleManager: Shutting down and abandoning module SessionFrontend (178)
+[2017.01.31-21.30.38:202][592]LogModuleManager: Shutting down and abandoning module ProfilerClient (177)
+[2017.01.31-21.30.38:202][592]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (176)
+[2017.01.31-21.30.38:202][592]LogModuleManager: Shutting down and abandoning module DeviceManager (175)
+[2017.01.31-21.30.38:246][592]LogModuleManager: Shutting down and abandoning module AutomationController (174)
+[2017.01.31-21.30.38:246][592]LogModuleManager: Shutting down and abandoning module AutomationWindow (173)
+[2017.01.31-21.30.38:246][592]LogModuleManager: Shutting down and abandoning module Layers (172)
+[2017.01.31-21.30.38:246][592]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (171)
+[2017.01.31-21.30.38:246][592]LogModuleManager: Shutting down and abandoning module DetailCustomizations (170)
+[2017.01.31-21.30.38:246][592]LogModuleManager: Shutting down and abandoning module PackagesDialog (169)
+[2017.01.31-21.30.38:247][592]LogModuleManager: Shutting down and abandoning module AnimGraph (168)
+[2017.01.31-21.30.38:247][592]LogModuleManager: Shutting down and abandoning module Persona (167)
+[2017.01.31-21.30.38:247][592]LogModuleManager: Shutting down and abandoning module Kismet (166)
+[2017.01.31-21.30.38:271][592]LogModuleManager: Shutting down and abandoning module GraphEditor (165)
+[2017.01.31-21.30.38:271][592]LogModuleManager: Shutting down and abandoning module ClassViewer (164)
+[2017.01.31-21.30.38:275][592]LogModuleManager: Shutting down and abandoning module Toolbox (163)
+[2017.01.31-21.30.38:275][592]LogModuleManager: Shutting down and abandoning module ModuleUI (162)
+[2017.01.31-21.30.38:275][592]LogModuleManager: Shutting down and abandoning module MovieSceneTools (161)
+[2017.01.31-21.30.38:275][592]LogModuleManager: Shutting down and abandoning module OutputLog (160)
+[2017.01.31-21.30.38:275][592]LogModuleManager: Shutting down and abandoning module GammaUI (159)
+[2017.01.31-21.30.38:275][592]LogModuleManager: Shutting down and abandoning module Documentation (158)
+[2017.01.31-21.30.38:277][592]LogModuleManager: Shutting down and abandoning module Niagara (157)
+[2017.01.31-21.30.38:277][592]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (156)
+[2017.01.31-21.30.38:277][592]LogModuleManager: Shutting down and abandoning module AnalyticsET (155)
+[2017.01.31-21.30.38:277][592]LogModuleManager: Shutting down and abandoning module PortalServices (154)
+[2017.01.31-21.30.38:277][592]LogModuleManager: Shutting down and abandoning module PortalRpc (153)
+[2017.01.31-21.30.38:277][592]LogModuleManager: Shutting down and abandoning module MessagingRpc (152)
+[2017.01.31-21.30.38:277][592]LogModuleManager: Shutting down and abandoning module GameplayDebugger (151)
+[2017.01.31-21.30.38:277][592]LogModuleManager: Shutting down and abandoning module AITestSuite (150)
+[2017.01.31-21.30.38:277][592]LogModuleManager: Shutting down and abandoning module AIModule (149)
+[2017.01.31-21.30.38:277][592]LogModuleManager: Shutting down and abandoning module ProfilerService (148)
+[2017.01.31-21.30.38:312][592]LogModuleManager: Shutting down and abandoning module TaskGraph (147)
+[2017.01.31-21.30.38:312][592]LogModuleManager: Shutting down and abandoning module SubstanceEditor (146)
+[2017.01.31-21.30.38:313][592]LogModuleManager: Shutting down and abandoning module SlateRemote (145)
+[2017.01.31-21.30.38:313][592]LogModuleManager: Shutting down and abandoning module SteamVRController (144)
+[2017.01.31-21.30.38:313][592]LogModuleManager: Shutting down and abandoning module SteamVR (143)
+[2017.01.31-21.30.38:313][592]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (142)
+[2017.01.31-21.30.38:313][592]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (141)
+[2017.01.31-21.30.38:313][592]LogModuleManager: Shutting down and abandoning module OculusLibrary (140)
+[2017.01.31-21.30.38:313][592]LogModuleManager: Shutting down and abandoning module OculusInput (139)
+[2017.01.31-21.30.38:313][592]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (138)
+[2017.01.31-21.30.38:313][592]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (137)
+[2017.01.31-21.30.38:313][592]LogModuleManager: Shutting down and abandoning module CableComponent (136)
+[2017.01.31-21.30.38:313][592]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (135)
+[2017.01.31-21.30.38:313][592]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (133)
+[2017.01.31-21.30.38:313][592]LogModuleManager: Shutting down and abandoning module HTML5Networking (132)
+[2017.01.31-21.30.38:313][592]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (131)
+[2017.01.31-21.30.38:313][592]LogModuleManager: Shutting down and abandoning module GeometryCache (130)
+[2017.01.31-21.30.38:313][592]LogModuleManager: Shutting down and abandoning module AlembicLibrary (129)
+[2017.01.31-21.30.38:313][592]LogModuleManager: Shutting down and abandoning module AlembicImporter (128)
+[2017.01.31-21.30.38:313][592]LogModuleManager: Shutting down and abandoning module SuperSearch (127)
+[2017.01.31-21.30.38:313][592]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (126)
+[2017.01.31-21.30.38:313][592]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (125)
+[2017.01.31-21.30.38:313][592]LogModuleManager: Shutting down and abandoning module PluginBrowser (124)
+[2017.01.31-21.30.38:314][592]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (123)
+[2017.01.31-21.30.38:314][592]LogModuleManager: Shutting down and abandoning module EpicSurvey (122)
+[2017.01.31-21.30.38:314][592]LogModuleManager: Shutting down and abandoning module DesktopPlatform (121)
+[2017.01.31-21.30.38:314][592]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (120)
+[2017.01.31-21.30.38:314][592]LogModuleManager: Shutting down and abandoning module UObjectPlugin (119)
+[2017.01.31-21.30.38:314][592]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (118)
+[2017.01.31-21.30.38:314][592]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (117)
+[2017.01.31-21.30.38:314][592]LogModuleManager: Shutting down and abandoning module SourceControl (116)
+[2017.01.31-21.30.38:314][592]LogModuleManager: Shutting down and abandoning module GitSourceControl (115)
+[2017.01.31-21.30.38:314][592]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (114)
+[2017.01.31-21.30.38:314][592]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (113)
+[2017.01.31-21.30.38:314][592]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (112)
+[2017.01.31-21.30.38:314][592]LogModuleManager: Shutting down and abandoning module MeshPaint (111)
+[2017.01.31-21.30.38:314][592]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (110)
+[2017.01.31-21.30.38:315][592]LogModuleManager: Shutting down and abandoning module HotReload (109)
+[2017.01.31-21.30.38:315][592]LogDirectoryWatcher: A directory notification for 'C:/Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Binaries/Win64' was aborted.
+[2017.01.31-21.30.38:316][592]LogModuleManager: Shutting down and abandoning module MainFrame (108)
+[2017.01.31-21.30.38:316][592]LogModuleManager: Shutting down and abandoning module LevelEditor (107)
+[2017.01.31-21.30.38:320][592]LogModuleManager: Shutting down and abandoning module ContentBrowser (106)
+[2017.01.31-21.30.38:325][592]LogModuleManager: Shutting down and abandoning module Paper2DEditor (105)
+[2017.01.31-21.30.38:325][592]LogModuleManager: Shutting down and abandoning module UdpMessaging (104)
+[2017.01.31-21.30.38:425][592]LogModuleManager: Shutting down and abandoning module TcpMessaging (103)
+[2017.01.31-21.30.38:526][592]LogModuleManager: Shutting down and abandoning module SubstanceCore (102)
+[2017.01.31-21.30.38:526][592]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (101)
+[2017.01.31-21.30.38:526][592]LogModuleManager: Shutting down and abandoning module Paper2D (100)
+[2017.01.31-21.30.38:526][592]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (99)
+[2017.01.31-21.30.38:526][592]LogModuleManager: Shutting down and abandoning module WmfMedia (98)
+[2017.01.31-21.30.38:526][592]LogModuleManager: Shutting down and abandoning module MediaAssets (97)
+[2017.01.31-21.30.38:526][592]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (96)
+[2017.01.31-21.30.38:527][592]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (95)
+[2017.01.31-21.30.38:527][592]LogModuleManager: Shutting down and abandoning module VREditor (94)
+[2017.01.31-21.30.38:527][592]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (93)
+[2017.01.31-21.30.38:527][592]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (92)
+[2017.01.31-21.30.38:527][592]LogModuleManager: Shutting down and abandoning module FunctionalTesting (91)
+[2017.01.31-21.30.38:527][592]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (90)
+[2017.01.31-21.30.38:527][592]LogModuleManager: Shutting down and abandoning module Sequencer (89)
+[2017.01.31-21.30.38:527][592]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (88)
+[2017.01.31-21.30.38:527][592]LogModuleManager: Shutting down and abandoning module MessageLog (87)
+[2017.01.31-21.30.38:527][592]LogModuleManager: Shutting down and abandoning module AssetTools (86)
+[2017.01.31-21.30.38:528][592]LogModuleManager: Shutting down and abandoning module UMGEditor (85)
+[2017.01.31-21.30.38:528][592]LogModuleManager: Shutting down and abandoning module UMG (84)
+[2017.01.31-21.30.38:528][592]LogModuleManager: Shutting down and abandoning module SlateReflector (83)
+[2017.01.31-21.30.38:528][592]LogModuleManager: Shutting down and abandoning module Slate (82)
+[2017.01.31-21.30.38:528][592]LogModuleManager: Shutting down and abandoning module EditorStyle (81)
+[2017.01.31-21.30.38:539][592]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (80)
+[2017.01.31-21.30.38:539][592]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (79)
+[2017.01.31-21.30.38:539][592]LogModuleManager: Shutting down and abandoning module XAudio2 (78)
+[2017.01.31-21.30.38:539][592]LogModuleManager: Shutting down and abandoning module Networking (76)
+[2017.01.31-21.30.38:539][592]LogModuleManager: Shutting down and abandoning module Core (75)
+[2017.01.31-21.30.38:539][592]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (74)
+[2017.01.31-21.30.38:539][592]LogDirectoryWatcher: A directory notification for '../../../Engine/Content/' was aborted.
+[2017.01.31-21.30.38:541][592]LogDirectoryWatcher: A directory notification for '../../../../../../Users/Tak/Documents/GitHub/UnrealEngine_MM_TechDemo/Content/' was aborted.
+[2017.01.31-21.30.38:544][592]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/2D/Paper2D/Content/' was aborted.
+[2017.01.31-21.30.38:558][592]LogModuleManager: Shutting down and abandoning module AssetRegistry (73)
+[2017.01.31-21.30.38:755][592]LogModuleManager: Shutting down and abandoning module KismetCompiler (72)
+[2017.01.31-21.30.38:755][592]LogModuleManager: Shutting down and abandoning module PhysXFormats (71)
+[2017.01.31-21.30.38:755][592]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (70)
+[2017.01.31-21.30.38:755][592]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (69)
+[2017.01.31-21.30.38:755][592]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (68)
+[2017.01.31-21.30.38:755][592]LogModuleManager: Shutting down and abandoning module PropertyEditor (67)
+[2017.01.31-21.30.38:755][592]LogModuleManager: Shutting down and abandoning module MeshUtilities (66)
+[2017.01.31-21.30.38:755][592]LogModuleManager: Shutting down and abandoning module DerivedDataCache (65)
+[2017.01.31-21.30.38:774][592]LogDerivedDataCache: Shutdown
+[2017.01.31-21.30.38:774][592]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (64)
+[2017.01.31-21.30.38:774][592]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (63)
+[2017.01.31-21.30.38:774][592]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (62)
+[2017.01.31-21.30.38:774][592]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (61)
+[2017.01.31-21.30.38:774][592]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (60)
+[2017.01.31-21.30.38:774][592]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (59)
+[2017.01.31-21.30.38:774][592]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (58)
+[2017.01.31-21.30.38:774][592]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (57)
+[2017.01.31-21.30.38:774][592]LogModuleManager: Shutting down and abandoning module ImageWrapper (56)
+[2017.01.31-21.30.38:774][592]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (55)
+[2017.01.31-21.30.38:774][592]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (54)
+[2017.01.31-21.30.38:774][592]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (53)
+[2017.01.31-21.30.38:774][592]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (52)
+[2017.01.31-21.30.38:774][592]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (51)
+[2017.01.31-21.30.38:774][592]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (50)
+[2017.01.31-21.30.38:775][592]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (49)
+[2017.01.31-21.30.38:775][592]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (48)
+[2017.01.31-21.30.38:775][592]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (47)
+[2017.01.31-21.30.38:775][592]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (46)
+[2017.01.31-21.30.38:775][592]LogModuleManager: Shutting down and abandoning module Messaging (45)
+[2017.01.31-21.30.38:775][592]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (44)
+[2017.01.31-21.30.38:775][592]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (43)
+[2017.01.31-21.30.38:775][592]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (42)
+[2017.01.31-21.30.38:775][592]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (41)
+[2017.01.31-21.30.38:775][592]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (40)
+[2017.01.31-21.30.38:775][592]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (39)
+[2017.01.31-21.30.38:775][592]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (38)
+[2017.01.31-21.30.38:775][592]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (37)
+[2017.01.31-21.30.38:775][592]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (36)
+[2017.01.31-21.30.38:775][592]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (35)
+[2017.01.31-21.30.38:775][592]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (34)
+[2017.01.31-21.30.38:775][592]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (33)
+[2017.01.31-21.30.38:775][592]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (32)
+[2017.01.31-21.30.38:775][592]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (31)
+[2017.01.31-21.30.38:775][592]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (30)
+[2017.01.31-21.30.38:775][592]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (29)
+[2017.01.31-21.30.38:775][592]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (28)
+[2017.01.31-21.30.38:775][592]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (27)
+[2017.01.31-21.30.38:775][592]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (26)
+[2017.01.31-21.30.38:775][592]LogModuleManager: Shutting down and abandoning module TargetPlatform (25)
+[2017.01.31-21.30.38:775][592]LogModuleManager: Shutting down and abandoning module InputCore (24)
+[2017.01.31-21.30.38:775][592]LogModuleManager: Shutting down and abandoning module Settings (23)
+[2017.01.31-21.30.38:775][592]LogModuleManager: Shutting down and abandoning module OculusRift (22)
+[2017.01.31-21.30.38:775][592]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (21)
+[2017.01.31-21.30.38:775][592]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (20)
+[2017.01.31-21.30.38:775][592]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (18)
+[2017.01.31-21.30.38:775][592]LogOnline:Display: Unloading online subsystem: NULL
+[2017.01.31-21.30.38:775][592]LogModuleManager: Shutting down and abandoning module SSL (17)
+[2017.01.31-21.30.38:777][592]LogModuleManager: Shutting down and abandoning module HTTP (16)
+[2017.01.31-21.30.38:777][592]LogModuleManager: Shutting down and abandoning module XMPP (15)
+[2017.01.31-21.30.38:777][592]LogModuleManager: Shutting down and abandoning module TextureCompressor (14)
+[2017.01.31-21.30.38:777][592]LogModuleManager: Shutting down and abandoning module ShaderCore (13)
+[2017.01.31-21.30.38:777][592]LogModuleManager: Shutting down and abandoning module Landscape (12)
+[2017.01.31-21.30.38:777][592]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (11)
+[2017.01.31-21.30.38:788][592]LogModuleManager: Shutting down and abandoning module OpenGLDrv (10)
+[2017.01.31-21.30.38:788][592]LogModuleManager: Shutting down and abandoning module D3D11RHI (9)
+[2017.01.31-21.30.38:788][592]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (8)
+[2017.01.31-21.30.38:788][592]LogModuleManager: Shutting down and abandoning module Renderer (7)
+[2017.01.31-21.30.38:788][592]LogModuleManager: Shutting down and abandoning module Engine (6)
+[2017.01.31-21.30.38:788][592]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
+[2017.01.31-21.30.38:788][592]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
+[2017.01.31-21.30.38:788][592]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
+[2017.01.31-21.30.38:788][592]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
+[2017.01.31-21.30.38:788][592]LogModuleManager: Shutting down and abandoning module PakFile (1)
+[2017.01.31-21.30.38:790][592]LogExit: Exiting.
+[2017.01.31-21.30.38:811][592]Log file closed, 01/31/17 16:30:38
